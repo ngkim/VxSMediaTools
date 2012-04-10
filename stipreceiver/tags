@@ -1,0 +1,549 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALIGN16	decklink/dxt.h	66;"	d
+ALIGN16	decklink/dxt.h	68;"	d
+AddRef	decklink/decklinkcapture.cpp	/^	virtual ULONG		AddRef (void) {$/;"	f	class:VideoDelegate
+BLOCK	STIP.h	44;"	d
+BLOCK_SIZE	STIP.h	43;"	d
+BMDAnalogVideoFlags	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDAnalogVideoFlags;$/;"	t
+BMDAudioConnection	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDAudioConnection;$/;"	t
+BMDAudioOutputStreamType	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDAudioOutputStreamType;$/;"	t
+BMDAudioSampleRate	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDAudioSampleRate;$/;"	t
+BMDAudioSampleType	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDAudioSampleType;$/;"	t
+BMDDeckLinkAPIInformationID	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDDeckLinkAPIInformationID;$/;"	t
+BMDDeckLinkAPIVersion	decklink/include/DeckLinkAPI.h	/^    BMDDeckLinkAPIVersion                              = \/* 'vers' *\/ 0x76657273$/;"	e	enum:_BMDDeckLinkAPIInformationID
+BMDDeckLinkAttributeID	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDDeckLinkAttributeID;$/;"	t
+BMDDeckLinkHasSerialPort	decklink/include/DeckLinkAPI.h	/^    BMDDeckLinkHasSerialPort                           = \/* 'hspt' *\/ 0x68737074,$/;"	e	enum:_BMDDeckLinkAttributeID
+BMDDeckLinkMaximumAudioChannels	decklink/include/DeckLinkAPI.h	/^    BMDDeckLinkMaximumAudioChannels                    = \/* 'mach' *\/ 0x6D616368,$/;"	e	enum:_BMDDeckLinkAttributeID
+BMDDeckLinkSerialPortDeviceName	decklink/include/DeckLinkAPI.h	/^    BMDDeckLinkSerialPortDeviceName                    = \/* 'slpn' *\/ 0x736C706E$/;"	e	enum:_BMDDeckLinkAttributeID
+BMDDeckLinkSupportsExternalKeying	decklink/include/DeckLinkAPI.h	/^    BMDDeckLinkSupportsExternalKeying                  = \/* 'keye' *\/ 0x6B657965,$/;"	e	enum:_BMDDeckLinkAttributeID
+BMDDeckLinkSupportsHDKeying	decklink/include/DeckLinkAPI.h	/^    BMDDeckLinkSupportsHDKeying                        = \/* 'keyh' *\/ 0x6B657968,$/;"	e	enum:_BMDDeckLinkAttributeID
+BMDDeckLinkSupportsInputFormatDetection	decklink/include/DeckLinkAPI.h	/^    BMDDeckLinkSupportsInputFormatDetection            = \/* 'infd' *\/ 0x696E6664,$/;"	e	enum:_BMDDeckLinkAttributeID
+BMDDeckLinkSupportsInternalKeying	decklink/include/DeckLinkAPI.h	/^    BMDDeckLinkSupportsInternalKeying                  = \/* 'keyi' *\/ 0x6B657969,$/;"	e	enum:_BMDDeckLinkAttributeID
+BMDDetectedVideoInputFormatFlags	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDDetectedVideoInputFormatFlags;$/;"	t
+BMDDisplayMode	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDDisplayMode;$/;"	t
+BMDDisplayModeSupport	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDDisplayModeSupport;$/;"	t
+BMDFieldDominance	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDFieldDominance;$/;"	t
+BMDFrameFlags	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDFrameFlags;$/;"	t
+BMDOutputFrameCompletionResult	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDOutputFrameCompletionResult;$/;"	t
+BMDPixelFormat	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDPixelFormat;$/;"	t
+BMDTimeScale	decklink/include/DeckLinkAPI.h	/^typedef int64_t BMDTimeScale;$/;"	t
+BMDTimeValue	decklink/include/DeckLinkAPI.h	/^typedef int64_t BMDTimeValue;$/;"	t
+BMDTimecodeBCD	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDTimecodeBCD;$/;"	t
+BMDTimecodeFlags	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDTimecodeFlags;$/;"	t
+BMDTimecodeFormat	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDTimecodeFormat;$/;"	t
+BMDVideoConnection	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDVideoConnection;$/;"	t
+BMDVideoInputConversionMode	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDVideoInputConversionMode;$/;"	t
+BMDVideoInputFlags	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDVideoInputFlags;$/;"	t
+BMDVideoInputFormatChangedEvents	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDVideoInputFormatChangedEvents;$/;"	t
+BMDVideoOutputConversionMode	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDVideoOutputConversionMode;$/;"	t
+BMDVideoOutputFlags	decklink/include/DeckLinkAPI.h	/^typedef uint32_t BMDVideoOutputFlags;$/;"	t
+C565_5_MASK	decklink/dxt.h	54;"	d
+C565_6_MASK	decklink/dxt.h	55;"	d
+CFUUIDBytes	decklink/include/LinuxCOM.h	/^typedef REFIID CFUUIDBytes;$/;"	t
+CFUUIDGetUUIDBytes	decklink/include/LinuxCOM.h	52;"	d
+COMPILER	Makefile	/^COMPILER=g++$/;"	m
+COMPILER_FLAGS	Makefile	/^COMPILER_FLAGS= -Wno-multichar -fno-rtti $(SAGE_CFLAGS) -O3 -I..\/..\/include $(QUANTA_CFLAGS) $(GLEW_CFLAGS) $(GLSL_YUV_DEFINE) $(PORTAUDIO_CFLAGS) $(GLUT_CFLAGS)$/;"	m
+COMPILER_FLAGS	decklink/Makefile	/^COMPILER_FLAGS= -Wno-multichar -I$(SDK_PATH) -fno-rtti $(SAGE_CFLAGS) -O3 -I..\/..\/include $(QUANTA_CFLAGS) $(GLEW_CFLAGS) $(GLSL_YUV_DEFINE) $(PORTAUDIO_CFLAGS) $(GLUT_CFLAGS) $(NVCCFLAGS)$/;"	m
+CUDALIBS	decklink/Makefile	/^CUDALIBS=-L\/usr\/local\/cuda\/lib64 -L\/usr\/lib  -lcuda -lcudart$/;"	m
+ColorDistance	decklink/dxt.cpp	/^int ColorDistance( const byte *c1, const byte *c2 )$/;"	f
+ColorLuminance	decklink/dxt.cpp	/^int ColorLuminance( const byte *color )$/;"	f
+ColorTo565	decklink/dxt.cpp	/^word ColorTo565( const byte *color )$/;"	f
+CompressDXT	decklink/libdxt.cpp	/^int CompressDXT(const byte *in, byte *out, int width, int height, int format, uint* block_image, int numthreads)$/;"	f
+CompressImageDXT1	decklink/dxt.cpp	/^void CompressImageDXT1( const byte *inBuf, byte *outBuf,$/;"	f
+CompressImageDXT5	decklink/dxt.cpp	/^void CompressImageDXT5( const byte *inBuf, byte *outBuf, int width, int height,$/;"	f
+CompressImageDXT5YCoCg	decklink/dxt.cpp	/^void CompressImageDXT5YCoCg( const byte *inBuf, byte *outBuf, int width, int height,$/;"	f
+ComputeError	decklink/dxt.cpp	/^double ComputeError( const byte *original, const byte *dxt, int width, int height)$/;"	f
+CreateDeckLinkIteratorInstance	decklink/include/DeckLinkAPIDispatch.cpp	/^IDeckLinkIterator*		CreateDeckLinkIteratorInstance (void)$/;"	f
+CreateIteratorFunc	decklink/include/DeckLinkAPIDispatch.cpp	/^typedef IDeckLinkIterator* (*CreateIteratorFunc)(void);$/;"	t	file:
+CreateOpenGLScreenPreviewHelper	decklink/include/DeckLinkAPIDispatch.cpp	/^IDeckLinkGLScreenPreviewHelper*		CreateOpenGLScreenPreviewHelper (void)$/;"	f
+CreateOpenGLScreenPreviewHelperFunc	decklink/include/DeckLinkAPIDispatch.cpp	/^typedef IDeckLinkGLScreenPreviewHelper* (*CreateOpenGLScreenPreviewHelperFunc)(void);$/;"	t	file:
+DATA_PATH_H	decklink/util.h	101;"	d
+DDPF_FOURCC	dds.h	/^static const uint DDPF_FOURCC = 0x00000004U;$/;"	v
+DDSCAPS_TEXTURE	dds.h	/^static const uint DDSCAPS_TEXTURE = 0x00001000U;$/;"	v
+DDSCaps	dds.h	/^struct DDSCaps {$/;"	s
+DDSD_CAPS	dds.h	/^static const uint DDSD_CAPS = 0x00000001U;$/;"	v
+DDSD_HEIGHT	dds.h	/^static const uint DDSD_HEIGHT = 0x00000002U;$/;"	v
+DDSD_LINEARSIZE	dds.h	/^static const uint DDSD_LINEARSIZE = 0x00080000U;$/;"	v
+DDSD_PIXELFORMAT	dds.h	/^static const uint DDSD_PIXELFORMAT = 0x00001000U;$/;"	v
+DDSD_WIDTH	dds.h	/^static const uint DDSD_WIDTH = 0x00000004U;$/;"	v
+DDSHeader	dds.h	/^struct DDSHeader {$/;"	s
+DDSPixelFormat	dds.h	/^struct DDSPixelFormat {$/;"	s
+DDS_H	dds.h	13;"	d
+DXT1	STIP.h	38;"	d
+DXT1A	STIP.h	39;"	d
+DXT5	STIP.h	40;"	d
+DXT_INTR	decklink/dxt.cpp	46;"	d	file:
+E_ABORT	decklink/include/LinuxCOM.h	79;"	d
+E_ACCESSDENIED	decklink/include/LinuxCOM.h	81;"	d
+E_FAIL	decklink/include/LinuxCOM.h	80;"	d
+E_HANDLE	decklink/include/LinuxCOM.h	78;"	d
+E_INVALIDARG	decklink/include/LinuxCOM.h	75;"	d
+E_NOINTERFACE	decklink/include/LinuxCOM.h	76;"	d
+E_NOTIMPL	decklink/include/LinuxCOM.h	73;"	d
+E_OUTOFMEMORY	decklink/include/LinuxCOM.h	74;"	d
+E_POINTER	decklink/include/LinuxCOM.h	77;"	d
+E_UNEXPECTED	decklink/include/LinuxCOM.h	72;"	d
+EmitAlphaIndices	decklink/dxt.cpp	/^void EmitAlphaIndices( const byte *colorBlock, const byte minAlpha, const byte maxAlpha, byte *&outData )$/;"	f
+EmitAlphaIndicesFast	decklink/dxt.cpp	/^void EmitAlphaIndicesFast( const byte *colorBlock, const byte minAlpha, const byte maxAlpha, byte *&outData )$/;"	f
+EmitAlphaIndices_Intrinsics	decklink/intrinsic.cpp	/^void EmitAlphaIndices_Intrinsics( const byte *colorBlock, const byte minAlpha, const byte maxAlpha, byte *&outData)$/;"	f
+EmitByte	decklink/dxt.cpp	/^void EmitByte( byte b, byte *&outData)$/;"	f
+EmitColorIndices	decklink/dxt.cpp	/^void EmitColorIndices( const byte *colorBlock, const byte *minColor, const byte *maxColor, byte *&outData )$/;"	f
+EmitColorIndicesFast	decklink/dxt.cpp	/^void EmitColorIndicesFast( const byte *colorBlock, const byte *minColor, const byte *maxColor, byte *&outData )$/;"	f
+EmitColorIndices_Intrinsics	decklink/intrinsic.cpp	/^void EmitColorIndices_Intrinsics( const byte *colorBlock, const byte *minColor, const byte *maxColor, byte *&outData )$/;"	f
+EmitDoubleWord	decklink/dxt.cpp	/^void EmitDoubleWord( dword i, byte *&outData)$/;"	f
+EmitWord	decklink/dxt.cpp	/^void EmitWord( word s, byte *&outData)$/;"	f
+ExtractBlock	decklink/dxt.cpp	/^void ExtractBlock( const byte *inPtr, int width, byte *colorBlock )$/;"	f
+ExtractBlock_Intrinsics	decklink/intrinsic.cpp	/^void ExtractBlock_Intrinsics( const byte *inPtr, int width, byte *colorBlock )$/;"	f
+FAILED	decklink/include/LinuxCOM.h	59;"	d
+FORMAT_DXT1	decklink/libdxt.h	42;"	d
+FORMAT_DXT5	decklink/libdxt.h	43;"	d
+FORMAT_DXT5YCOCG	decklink/libdxt.h	44;"	d
+FOURCC_DDS	dds.h	/^static const uint FOURCC_DDS = MAKEFOURCC('D', 'D', 'S', ' ');$/;"	v
+FOURCC_DXT1	dds.h	/^static const uint FOURCC_DXT1 = MAKEFOURCC('D', 'X', 'T', '1');$/;"	v
+FPRINTF	decklink/cutil_inline_runtime.h	230;"	d
+FPRINTF	decklink/cutil_inline_runtime.h	232;"	d
+FPRINTF	decklink/cutil_inline_runtime.h	237;"	d
+FPRINTF	decklink/cutil_inline_runtime.h	240;"	d
+GENCODE_SM20	decklink/Makefile	/^GENCODE_SM20 = -gencode=arch=compute_20,code=\\"sm_20,compute_20\\"$/;"	m
+GetFrameSize	decklink/decklinkcapture.cpp	/^GetFrameSize(int card, int mode, int *winWidth, int *winHeight)$/;"	f
+GetMinMaxColors	decklink/dxt.cpp	/^void GetMinMaxColors( const byte *colorBlock, byte *minColor, byte *maxColor )$/;"	f
+GetMinMaxColorsAlpha	decklink/dxt.cpp	/^void GetMinMaxColorsAlpha(  byte *colorBlock, byte *minColor, byte *maxColor )$/;"	f
+GetMinMaxColorsByBBox	decklink/dxt.cpp	/^void GetMinMaxColorsByBBox( const byte *colorBlock, byte *minColor, byte *maxColor )$/;"	f
+GetMinMaxColorsByLuminance	decklink/dxt.cpp	/^void GetMinMaxColorsByLuminance( const byte *colorBlock, byte *minColor, byte *maxColor )$/;"	f
+GetMinMaxColors_Intrinsics	decklink/intrinsic.cpp	/^void GetMinMaxColors_Intrinsics( const byte *colorBlock, byte *minColor, byte *maxColor )$/;"	f
+H263	STIP.h	34;"	d
+H264	STIP.h	35;"	d
+HRESULT	decklink/include/LinuxCOM.h	/^typedef int HRESULT;$/;"	t
+HRESULT_CODE	decklink/include/LinuxCOM.h	62;"	d
+HRESULT_FACILITY	decklink/include/LinuxCOM.h	63;"	d
+HRESULT_SEVERITY	decklink/include/LinuxCOM.h	64;"	d
+HueColorSpaceMat	decklink/decklinkcapture.cpp	/^float *HueColorSpaceMat;$/;"	v
+IDeckLink	decklink/include/DeckLinkAPI.h	/^class IDeckLink : public IUnknown$/;"	c
+IDeckLinkAPIInformation	decklink/include/DeckLinkAPI.h	/^class IDeckLinkAPIInformation : public IUnknown$/;"	c
+IDeckLinkAttributes	decklink/include/DeckLinkAPI.h	/^class IDeckLinkAttributes : public IUnknown$/;"	c
+IDeckLinkAudioInputPacket	decklink/include/DeckLinkAPI.h	/^class IDeckLinkAudioInputPacket : public IUnknown$/;"	c
+IDeckLinkAudioInputPacket_v7_1	decklink/include/DeckLinkAPI_v7_1.h	/^class IDeckLinkAudioInputPacket_v7_1 : public IUnknown$/;"	c
+IDeckLinkAudioOutputCallback	decklink/include/DeckLinkAPI.h	/^class IDeckLinkAudioOutputCallback : public IUnknown$/;"	c
+IDeckLinkConfiguration	decklink/include/DeckLinkAPI.h	/^class IDeckLinkConfiguration : public IUnknown$/;"	c
+IDeckLinkDisplayMode	decklink/include/DeckLinkAPI.h	/^class IDeckLinkDisplayMode : public IUnknown$/;"	c
+IDeckLinkDisplayModeIterator	decklink/include/DeckLinkAPI.h	/^class IDeckLinkDisplayModeIterator : public IUnknown$/;"	c
+IDeckLinkDisplayModeIterator_v7_1	decklink/include/DeckLinkAPI_v7_1.h	/^class IDeckLinkDisplayModeIterator_v7_1 : public IUnknown$/;"	c
+IDeckLinkDisplayMode_v7_1	decklink/include/DeckLinkAPI_v7_1.h	/^class IDeckLinkDisplayMode_v7_1 : public IUnknown$/;"	c
+IDeckLinkGLScreenPreviewHelper	decklink/include/DeckLinkAPI.h	/^class IDeckLinkGLScreenPreviewHelper : public IUnknown$/;"	c
+IDeckLinkInput	decklink/include/DeckLinkAPI.h	/^class IDeckLinkInput : public IUnknown$/;"	c
+IDeckLinkInputCallback	decklink/include/DeckLinkAPI.h	/^class IDeckLinkInputCallback : public IUnknown$/;"	c
+IDeckLinkInputCallback_v7_1	decklink/include/DeckLinkAPI_v7_1.h	/^class IDeckLinkInputCallback_v7_1 : public IUnknown$/;"	c
+IDeckLinkInputCallback_v7_3	decklink/include/DeckLinkAPI_v7_3.h	/^class IDeckLinkInputCallback_v7_3 : public IUnknown$/;"	c
+IDeckLinkInput_v7_1	decklink/include/DeckLinkAPI_v7_1.h	/^class IDeckLinkInput_v7_1 : public IUnknown$/;"	c
+IDeckLinkInput_v7_3	decklink/include/DeckLinkAPI_v7_3.h	/^class IDeckLinkInput_v7_3 : public IUnknown$/;"	c
+IDeckLinkIterator	decklink/include/DeckLinkAPI.h	/^class IDeckLinkIterator : public IUnknown$/;"	c
+IDeckLinkKeyer	decklink/include/DeckLinkAPI.h	/^class IDeckLinkKeyer : public IUnknown$/;"	c
+IDeckLinkMemoryAllocator	decklink/include/DeckLinkAPI.h	/^class IDeckLinkMemoryAllocator : public IUnknown$/;"	c
+IDeckLinkMutableVideoFrame	decklink/include/DeckLinkAPI.h	/^class IDeckLinkMutableVideoFrame : public IDeckLinkVideoFrame$/;"	c
+IDeckLinkOutput	decklink/include/DeckLinkAPI.h	/^class IDeckLinkOutput : public IUnknown$/;"	c
+IDeckLinkOutput_v7_1	decklink/include/DeckLinkAPI_v7_1.h	/^class IDeckLinkOutput_v7_1 : public IUnknown$/;"	c
+IDeckLinkOutput_v7_3	decklink/include/DeckLinkAPI_v7_3.h	/^class IDeckLinkOutput_v7_3 : public IUnknown$/;"	c
+IDeckLinkScreenPreviewCallback	decklink/include/DeckLinkAPI.h	/^class IDeckLinkScreenPreviewCallback : public IUnknown$/;"	c
+IDeckLinkTimecode	decklink/include/DeckLinkAPI.h	/^class IDeckLinkTimecode : public IUnknown$/;"	c
+IDeckLinkVideoFrame	decklink/include/DeckLinkAPI.h	/^class IDeckLinkVideoFrame : public IUnknown$/;"	c
+IDeckLinkVideoFrameAncillary	decklink/include/DeckLinkAPI.h	/^class IDeckLinkVideoFrameAncillary : public IUnknown$/;"	c
+IDeckLinkVideoFrame_v7_1	decklink/include/DeckLinkAPI_v7_1.h	/^class IDeckLinkVideoFrame_v7_1 : public IUnknown$/;"	c
+IDeckLinkVideoInputFrame	decklink/include/DeckLinkAPI.h	/^class IDeckLinkVideoInputFrame : public IDeckLinkVideoFrame$/;"	c
+IDeckLinkVideoInputFrame_v7_1	decklink/include/DeckLinkAPI_v7_1.h	/^class IDeckLinkVideoInputFrame_v7_1 : public IDeckLinkVideoFrame_v7_1$/;"	c
+IDeckLinkVideoInputFrame_v7_3	decklink/include/DeckLinkAPI_v7_3.h	/^class IDeckLinkVideoInputFrame_v7_3 : public IDeckLinkVideoFrame$/;"	c
+IDeckLinkVideoOutputCallback	decklink/include/DeckLinkAPI.h	/^class IDeckLinkVideoOutputCallback : public IUnknown$/;"	c
+IDeckLinkVideoOutputCallback_v7_1	decklink/include/DeckLinkAPI_v7_1.h	/^class IDeckLinkVideoOutputCallback_v7_1 : public IUnknown$/;"	c
+IID_IDeckLink	decklink/include/DeckLinkAPI.h	54;"	d
+IID_IDeckLinkAPIInformation	decklink/include/DeckLinkAPI.h	51;"	d
+IID_IDeckLinkAttributes	decklink/include/DeckLinkAPI.h	66;"	d
+IID_IDeckLinkAudioInputPacket	decklink/include/DeckLinkAPI.h	62;"	d
+IID_IDeckLinkAudioInputPacket_v7_1	decklink/include/DeckLinkAPI_v7_1.h	59;"	d
+IID_IDeckLinkAudioOutputCallback	decklink/include/DeckLinkAPI.h	49;"	d
+IID_IDeckLinkConfiguration	decklink/include/DeckLinkAPI.h	65;"	d
+IID_IDeckLinkDisplayMode	decklink/include/DeckLinkAPI.h	53;"	d
+IID_IDeckLinkDisplayModeIterator	decklink/include/DeckLinkAPI.h	52;"	d
+IID_IDeckLinkDisplayModeIterator_v7_1	decklink/include/DeckLinkAPI_v7_1.h	35;"	d
+IID_IDeckLinkDisplayMode_v7_1	decklink/include/DeckLinkAPI_v7_1.h	38;"	d
+IID_IDeckLinkGLScreenPreviewHelper	decklink/include/DeckLinkAPI.h	64;"	d
+IID_IDeckLinkInput	decklink/include/DeckLinkAPI.h	56;"	d
+IID_IDeckLinkInputCallback	decklink/include/DeckLinkAPI.h	47;"	d
+IID_IDeckLinkInputCallback_v7_1	decklink/include/DeckLinkAPI_v7_1.h	44;"	d
+IID_IDeckLinkInputCallback_v7_3	decklink/include/DeckLinkAPI_v7_3.h	37;"	d
+IID_IDeckLinkInput_v7_1	decklink/include/DeckLinkAPI_v7_1.h	50;"	d
+IID_IDeckLinkInput_v7_3	decklink/include/DeckLinkAPI_v7_3.h	39;"	d
+IID_IDeckLinkIterator	decklink/include/DeckLinkAPI.h	50;"	d
+IID_IDeckLinkKeyer	decklink/include/DeckLinkAPI.h	67;"	d
+IID_IDeckLinkMemoryAllocator	decklink/include/DeckLinkAPI.h	48;"	d
+IID_IDeckLinkMutableVideoFrame	decklink/include/DeckLinkAPI.h	59;"	d
+IID_IDeckLinkOutput	decklink/include/DeckLinkAPI.h	55;"	d
+IID_IDeckLinkOutput_v7_1	decklink/include/DeckLinkAPI_v7_1.h	47;"	d
+IID_IDeckLinkOutput_v7_3	decklink/include/DeckLinkAPI_v7_3.h	38;"	d
+IID_IDeckLinkScreenPreviewCallback	decklink/include/DeckLinkAPI.h	63;"	d
+IID_IDeckLinkTimecode	decklink/include/DeckLinkAPI.h	57;"	d
+IID_IDeckLinkVideoFrame	decklink/include/DeckLinkAPI.h	58;"	d
+IID_IDeckLinkVideoFrameAncillary	decklink/include/DeckLinkAPI.h	61;"	d
+IID_IDeckLinkVideoFrame_v7_1	decklink/include/DeckLinkAPI_v7_1.h	53;"	d
+IID_IDeckLinkVideoInputFrame	decklink/include/DeckLinkAPI.h	60;"	d
+IID_IDeckLinkVideoInputFrame_v7_1	decklink/include/DeckLinkAPI_v7_1.h	56;"	d
+IID_IDeckLinkVideoInputFrame_v7_3	decklink/include/DeckLinkAPI_v7_3.h	40;"	d
+IID_IDeckLinkVideoOutputCallback	decklink/include/DeckLinkAPI.h	46;"	d
+IID_IDeckLinkVideoOutputCallback_v7_1	decklink/include/DeckLinkAPI_v7_1.h	41;"	d
+IID_IUnknown	decklink/include/LinuxCOM.h	85;"	d
+INCLUDE_DIR	Makefile	/^INCLUDE_DIR= -I..\/..\/include $(QUANTA_CFLAGS) $(GLEW_CFLAGS) $(GLSL_YUV_DEFINE) $(PORTAUDIO_CFLAGS) $(GLUT_CFLAGS)$/;"	m
+INCLUDE_DIR	decklink/Makefile	/^INCLUDE_DIR= -I$(SDK_PATH) -I..\/..\/include $(QUANTA_CFLAGS) $(GLEW_CFLAGS) $(GLSL_YUV_DEFINE) $(PORTAUDIO_CFLAGS) $(GLUT_CFLAGS) $(NVCCFLAGS)$/;"	m
+INSET_SHIFT	decklink/dxt.h	57;"	d
+IS_ERROR	decklink/include/LinuxCOM.h	61;"	d
+IUnknown	decklink/include/LinuxCOM.h	/^class IUnknown$/;"	c
+IUnknownUUID	decklink/include/LinuxCOM.h	86;"	d
+InitDeckLinkAPI	decklink/include/DeckLinkAPIDispatch.cpp	/^void	InitDeckLinkAPI (void)$/;"	f
+InitDeckLinkPreviewAPI	decklink/include/DeckLinkAPIDispatch.cpp	/^void	InitDeckLinkPreviewAPI (void)$/;"	f
+KDeckLinkPreviewAPI_Name	decklink/include/DeckLinkAPIDispatch.cpp	35;"	d	file:
+LIBS	Makefile	/^LIBS=-lpthread ${SUN_LIBS} -lm -ldl $(QUANTA_LDFLAGS) $(GLEW_LIB) -L..\/..\/lib -lsail $/;"	m
+LIBS	decklink/Makefile	/^   LIBS=-lpthread ${SUN_LIBS} -lm -ldl $(QUANTA_LDFLAGS) $(GLEW_LIB) -L..\/..\/lib -lsail -lm -ldl -lpthread -lswscale $/;"	m
+LIBS	decklink/Makefile	/^   LIBS=-lpthread -L..\/..\/lib -lsail -framework GLUT -framework OpenGL -lobjc -lm $/;"	m
+LPVOID	decklink/include/LinuxCOM.h	/^typedef void *LPVOID;$/;"	t
+MAKEFOURCC	dds.h	16;"	d
+MAKE_HRESULT	decklink/include/LinuxCOM.h	68;"	d
+MAX	decklink/cutil_inline_runtime.h	62;"	d
+MAX_INT	decklink/dxt.h	60;"	d
+MIN	decklink/cutil_inline_runtime.h	61;"	d
+MIN_INT	decklink/dxt.h	61;"	d
+MPEG2PS	STIP.h	32;"	d
+MPEG2TS	STIP.h	31;"	d
+MPEG4	STIP.h	33;"	d
+MUL	decklink/dxt_cuda.h	9;"	d
+NUM_THREADS	decklink/dxt_cuda.h	8;"	d
+NVCC	decklink/Makefile	/^NVCC=nvcc$/;"	m
+NVCCFLAGS	decklink/Makefile	/^NVCCFLAGS=-I. -I\/usr\/local\/cuda\/include $/;"	m
+PKT_HEADER	STIP.h	42;"	d
+PKT_SIZE	STIP.h	45;"	d
+PORT	decklinkrecv.cpp	15;"	d	file:
+PORT	stip_receiver.cpp	18;"	d	file:
+PROJ_EXE	Makefile	/^PROJ_EXE=stip_sender$/;"	m
+PROJ_EXE	decklink/Makefile	/^PROJ_EXE=dxt_cuda$/;"	m
+Packet	STIP.h	/^} Packet;$/;"	t	typeref:struct:_packet
+PixelFrame	decklink/decklinkcapture.cpp	/^void *PixelFrame;$/;"	v
+QueryInterface	decklink/decklinkcapture.cpp	/^	virtual HRESULT		QueryInterface (REFIID iid, LPVOID *ppv)$/;"	f	class:VideoDelegate
+REFIID	decklink/include/LinuxCOM.h	/^struct REFIID$/;"	s
+RGB	STIP.h	29;"	d
+RGBA	STIP.h	30;"	d
+RGBAtoYCoCg	decklink/dxt.cpp	/^void RGBAtoYCoCg(const byte *inBuf, byte *outBuf, int width, int height)$/;"	f
+R_SHUFFLE_D	decklink/intrinsic.cpp	79;"	d	file:
+Release	decklink/decklinkcapture.cpp	/^	virtual ULONG		Release (void) {$/;"	f	class:VideoDelegate
+SDK_PATH	decklink/Makefile	/^SDK_PATH=include$/;"	m
+SEVERITY_ERROR	decklink/include/LinuxCOM.h	66;"	d
+SEVERITY_SUCCESS	decklink/include/LinuxCOM.h	65;"	d
+STDMETHODCALLTYPE	decklink/include/LinuxCOM.h	83;"	d
+STIP_hdr	STIP.h	/^typedef struct _STIP_Transport_Header STIP_hdr;$/;"	t	typeref:struct:_STIP_Transport_Header
+STIP_init	STIP.h	/^typedef struct _STIP_Initiation_Header STIP_init;$/;"	t	typeref:struct:_STIP_Initiation_Header
+SUCCEEDED	decklink/include/LinuxCOM.h	58;"	d
+S_FALSE	decklink/include/LinuxCOM.h	71;"	d
+S_OK	decklink/include/LinuxCOM.h	70;"	d
+SwapColors	decklink/dxt.cpp	/^void SwapColors( byte *c1, byte *c2 )$/;"	f
+ULONG	decklink/include/LinuxCOM.h	/^typedef unsigned long ULONG;$/;"	t
+VSPrintf	decklink/cutil_inline_runtime.h	/^	inline void VSPrintf(FILE *file, LPCSTR fmt, ...)$/;"	f
+VideoDelegate	decklink/decklinkcapture.cpp	/^    VideoDelegate () {$/;"	f	class:VideoDelegate
+VideoDelegate	decklink/decklinkcapture.cpp	/^class VideoDelegate : public IDeckLinkInputCallback$/;"	c	file:
+VideoInputFormatChanged	decklink/decklinkcapture.cpp	/^        virtual HRESULT VideoInputFormatChanged(BMDVideoInputFormatChangedEvents, IDeckLinkDisplayMode*, BMDDetectedVideoInputFormatFlags)$/;"	f	class:VideoDelegate
+VideoInputFrameArrived	decklink/decklinkcapture.cpp	/^HRESULT	VideoDelegate::VideoInputFrameArrived (IDeckLinkVideoInputFrame* arrivedFrame,$/;"	f	class:VideoDelegate
+WIN32_LEAN_AND_MEAN	decklink/util.h	53;"	d
+WINDOWS_LEAN_AND_MEAN	decklink/cutil_inline_runtime.h	17;"	d
+YUV420	STIP.h	28;"	d
+YUV422	STIP.h	27;"	d
+YUV444	STIP.h	26;"	d
+_BMDAnalogVideoFlags	decklink/include/DeckLinkAPI.h	/^enum _BMDAnalogVideoFlags {$/;"	g
+_BMDAudioConnection	decklink/include/DeckLinkAPI.h	/^enum _BMDAudioConnection {$/;"	g
+_BMDAudioOutputStreamType	decklink/include/DeckLinkAPI.h	/^enum _BMDAudioOutputStreamType {$/;"	g
+_BMDAudioSampleRate	decklink/include/DeckLinkAPI.h	/^enum _BMDAudioSampleRate {$/;"	g
+_BMDAudioSampleType	decklink/include/DeckLinkAPI.h	/^enum _BMDAudioSampleType {$/;"	g
+_BMDDeckLinkAPIInformationID	decklink/include/DeckLinkAPI.h	/^enum _BMDDeckLinkAPIInformationID {$/;"	g
+_BMDDeckLinkAttributeID	decklink/include/DeckLinkAPI.h	/^enum _BMDDeckLinkAttributeID {$/;"	g
+_BMDDetectedVideoInputFormatFlags	decklink/include/DeckLinkAPI.h	/^enum _BMDDetectedVideoInputFormatFlags {$/;"	g
+_BMDDisplayMode	decklink/include/DeckLinkAPI.h	/^enum _BMDDisplayMode {$/;"	g
+_BMDDisplayModeSupport	decklink/include/DeckLinkAPI.h	/^enum _BMDDisplayModeSupport {$/;"	g
+_BMDFieldDominance	decklink/include/DeckLinkAPI.h	/^enum _BMDFieldDominance {$/;"	g
+_BMDFrameFlags	decklink/include/DeckLinkAPI.h	/^enum _BMDFrameFlags {$/;"	g
+_BMDOutputFrameCompletionResult	decklink/include/DeckLinkAPI.h	/^enum _BMDOutputFrameCompletionResult {$/;"	g
+_BMDPixelFormat	decklink/include/DeckLinkAPI.h	/^enum _BMDPixelFormat {$/;"	g
+_BMDTimecodeFlags	decklink/include/DeckLinkAPI.h	/^enum _BMDTimecodeFlags {$/;"	g
+_BMDTimecodeFormat	decklink/include/DeckLinkAPI.h	/^enum _BMDTimecodeFormat {$/;"	g
+_BMDVideoConnection	decklink/include/DeckLinkAPI.h	/^enum _BMDVideoConnection {$/;"	g
+_BMDVideoInputConversionMode	decklink/include/DeckLinkAPI.h	/^enum _BMDVideoInputConversionMode {$/;"	g
+_BMDVideoInputFlags	decklink/include/DeckLinkAPI.h	/^enum _BMDVideoInputFlags {$/;"	g
+_BMDVideoInputFormatChangedEvents	decklink/include/DeckLinkAPI.h	/^enum _BMDVideoInputFormatChangedEvents {$/;"	g
+_BMDVideoOutputConversionMode	decklink/include/DeckLinkAPI.h	/^enum _BMDVideoOutputConversionMode {$/;"	g
+_BMDVideoOutputFlags	decklink/include/DeckLinkAPI.h	/^enum _BMDVideoOutputFlags {$/;"	g
+_CUTIL_INLINE_FUNCTIONS_RUNTIME_H_	decklink/cutil_inline_runtime.h	13;"	d
+_ConvertSMVer2Cores	decklink/cutil_inline_runtime.h	/^inline int _ConvertSMVer2Cores(int major, int minor)$/;"	f
+_STIP_Initiation_Header	STIP.h	/^struct _STIP_Initiation_Header {$/;"	s
+_STIP_Transport_Header	STIP.h	/^struct _STIP_Transport_Header {$/;"	s
+__DeckLink_API_h__	decklink/include/DeckLinkAPI.h	31;"	d
+__DeckLink_API_v7_1_h__	decklink/include/DeckLinkAPI_v7_1.h	30;"	d
+__DeckLink_API_v7_3_h__	decklink/include/DeckLinkAPI_v7_3.h	31;"	d
+__LINUX_COM_H_	decklink/include/LinuxCOM.h	29;"	d
+__STIP_h__	STIP.h	2;"	d
+__cudaSafeCall	decklink/cutil_inline_runtime.h	/^inline void __cudaSafeCall( cudaError err, const char *file, const int line )$/;"	f
+__cudaSafeCallNoSync	decklink/cutil_inline_runtime.h	/^inline void __cudaSafeCallNoSync( cudaError err, const char *file, const int line )$/;"	f
+__cudaSafeThreadSync	decklink/cutil_inline_runtime.h	/^inline void __cudaSafeThreadSync( const char *file, const int line )$/;"	f
+__cufftSafeCall	decklink/cutil_inline_runtime.h	/^inline void __cufftSafeCall( cufftResult err, const char *file, const int line )$/;"	f
+__cutilCheckError	decklink/cutil_inline_runtime.h	/^inline void __cutilCheckError( CUTBoolean err, const char *file, const int line )$/;"	f
+__cutilCheckMsg	decklink/cutil_inline_runtime.h	/^inline void __cutilCheckMsg( const char *errorMessage, const char *file, const int line )$/;"	f
+__cutilCondition	decklink/cutil_inline_runtime.h	/^inline void __cutilCondition(int val, char *file, int line) $/;"	f
+__cutilExit	decklink/cutil_inline_runtime.h	/^inline void __cutilExit(int argc, char **argv)$/;"	f
+__cutilSafeMalloc	decklink/cutil_inline_runtime.h	/^inline void __cutilSafeMalloc( void *pointer, const char *file, const int line )$/;"	f
+_packet	STIP.h	/^typedef struct _packet {$/;"	s
+_work_t	decklink/libdxt.cpp	/^typedef struct _work_t {$/;"	s	file:
+amask	dds.h	/^    uint amask;$/;"	m	struct:DDSPixelFormat
+bitcount	dds.h	/^    uint bitcount;$/;"	m	struct:DDSPixelFormat
+block_image	decklink/decklinkcapture.cpp	/^uint *block_image;$/;"	v
+blocks4dxt	decklink/decklinkcapture.cpp	/^uint blocks4yuv, blocks4dxt;$/;"	v
+blocks4yuv	decklink/decklinkcapture.cpp	/^uint blocks4yuv, blocks4dxt;$/;"	v
+blocksPerLaunch4dxt	decklink/decklinkcapture.cpp	/^uint blocksPerLaunch4yuv, blocksPerLaunch4dxt; $/;"	v
+blocksPerLaunch4yuv	decklink/decklinkcapture.cpp	/^uint blocksPerLaunch4yuv, blocksPerLaunch4dxt; $/;"	v
+bmask	dds.h	/^    uint bmask;$/;"	m	struct:DDSPixelFormat
+bmdAnalogVideoFlagComponentBetacamLevels	decklink/include/DeckLinkAPI.h	/^    bmdAnalogVideoFlagComponentBetacamLevels           = 1 << 1$/;"	e	enum:_BMDAnalogVideoFlags
+bmdAnalogVideoFlagCompositeSetup75	decklink/include/DeckLinkAPI.h	/^    bmdAnalogVideoFlagCompositeSetup75                 = 1 << 0,$/;"	e	enum:_BMDAnalogVideoFlags
+bmdAudioConnectionAESEBU	decklink/include/DeckLinkAPI.h	/^    bmdAudioConnectionAESEBU                           = \/* 'aes ' *\/ 0x61657320,$/;"	e	enum:_BMDAudioConnection
+bmdAudioConnectionAnalog	decklink/include/DeckLinkAPI.h	/^    bmdAudioConnectionAnalog                           = \/* 'anlg' *\/ 0x616E6C67$/;"	e	enum:_BMDAudioConnection
+bmdAudioConnectionEmbedded	decklink/include/DeckLinkAPI.h	/^    bmdAudioConnectionEmbedded                         = \/* 'embd' *\/ 0x656D6264,$/;"	e	enum:_BMDAudioConnection
+bmdAudioOutputStreamContinuous	decklink/include/DeckLinkAPI.h	/^    bmdAudioOutputStreamContinuous,                   $/;"	e	enum:_BMDAudioOutputStreamType
+bmdAudioOutputStreamContinuousDontResample	decklink/include/DeckLinkAPI.h	/^    bmdAudioOutputStreamContinuousDontResample,       $/;"	e	enum:_BMDAudioOutputStreamType
+bmdAudioOutputStreamTimestamped	decklink/include/DeckLinkAPI.h	/^    bmdAudioOutputStreamTimestamped                   $/;"	e	enum:_BMDAudioOutputStreamType
+bmdAudioSampleRate48kHz	decklink/include/DeckLinkAPI.h	/^    bmdAudioSampleRate48kHz                            = 48000$/;"	e	enum:_BMDAudioSampleRate
+bmdAudioSampleType16bitInteger	decklink/include/DeckLinkAPI.h	/^    bmdAudioSampleType16bitInteger                     = 16,$/;"	e	enum:_BMDAudioSampleType
+bmdAudioSampleType32bitInteger	decklink/include/DeckLinkAPI.h	/^    bmdAudioSampleType32bitInteger                     = 32$/;"	e	enum:_BMDAudioSampleType
+bmdDetectedVideoInputRGB444	decklink/include/DeckLinkAPI.h	/^    bmdDetectedVideoInputRGB444                        = 1 << 1$/;"	e	enum:_BMDDetectedVideoInputFormatFlags
+bmdDetectedVideoInputYCbCr422	decklink/include/DeckLinkAPI.h	/^    bmdDetectedVideoInputYCbCr422                      = 1 << 0,$/;"	e	enum:_BMDDetectedVideoInputFormatFlags
+bmdDisplayModeNotSupported	decklink/include/DeckLinkAPI.h	/^    bmdDisplayModeNotSupported                         = 0,$/;"	e	enum:_BMDDisplayModeSupport
+bmdDisplayModeSupported	decklink/include/DeckLinkAPI.h	/^    bmdDisplayModeSupported,                          $/;"	e	enum:_BMDDisplayModeSupport
+bmdDisplayModeSupportedWithConversion	decklink/include/DeckLinkAPI.h	/^    bmdDisplayModeSupportedWithConversion             $/;"	e	enum:_BMDDisplayModeSupport
+bmdFormat10BitRGB	decklink/include/DeckLinkAPI.h	/^    bmdFormat10BitRGB                                  = \/* 'r210' *\/ 0x72323130$/;"	e	enum:_BMDPixelFormat
+bmdFormat10BitYUV	decklink/include/DeckLinkAPI.h	/^    bmdFormat10BitYUV                                  = \/* 'v210' *\/ 0x76323130,$/;"	e	enum:_BMDPixelFormat
+bmdFormat8BitARGB	decklink/include/DeckLinkAPI.h	/^    bmdFormat8BitARGB                                  = 0x20,$/;"	e	enum:_BMDPixelFormat
+bmdFormat8BitBGRA	decklink/include/DeckLinkAPI.h	/^    bmdFormat8BitBGRA                                  = \/* 'BGRA' *\/ 0x42475241,$/;"	e	enum:_BMDPixelFormat
+bmdFormat8BitYUV	decklink/include/DeckLinkAPI.h	/^    bmdFormat8BitYUV                                   = \/* '2vuy' *\/ 0x32767579,$/;"	e	enum:_BMDPixelFormat
+bmdFrameFlagDefault	decklink/include/DeckLinkAPI.h	/^    bmdFrameFlagDefault                                = 0,$/;"	e	enum:_BMDFrameFlags
+bmdFrameFlagFlipVertical	decklink/include/DeckLinkAPI.h	/^    bmdFrameFlagFlipVertical                           = 1 << 0,$/;"	e	enum:_BMDFrameFlags
+bmdFrameHasNoInputSource	decklink/include/DeckLinkAPI.h	/^    bmdFrameHasNoInputSource                           = 1 << 31$/;"	e	enum:_BMDFrameFlags
+bmdLowerFieldFirst	decklink/include/DeckLinkAPI.h	/^    bmdLowerFieldFirst                                 = \/* 'lowr' *\/ 0x6C6F7772,$/;"	e	enum:_BMDFieldDominance
+bmdMode2k2398	decklink/include/DeckLinkAPI.h	/^    bmdMode2k2398                                      = \/* '2k23' *\/ 0x326B3233,$/;"	e	enum:_BMDDisplayMode
+bmdMode2k24	decklink/include/DeckLinkAPI.h	/^    bmdMode2k24                                        = \/* '2k24' *\/ 0x326B3234,$/;"	e	enum:_BMDDisplayMode
+bmdMode2k25	decklink/include/DeckLinkAPI.h	/^    bmdMode2k25                                        = \/* '2k25' *\/ 0x326B3235$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080i50	decklink/include/DeckLinkAPI.h	/^    bmdModeHD1080i50                                   = \/* 'Hi50' *\/ 0x48693530,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080i5994	decklink/include/DeckLinkAPI.h	/^    bmdModeHD1080i5994                                 = \/* 'Hi59' *\/ 0x48693539,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080i6000	decklink/include/DeckLinkAPI.h	/^    bmdModeHD1080i6000                                 = \/* 'Hi60' *\/ 0x48693630, \/\/ N.B. This _really_ is 60.00 Hz.$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080p2398	decklink/include/DeckLinkAPI.h	/^    bmdModeHD1080p2398                                 = \/* '23ps' *\/ 0x32337073,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080p24	decklink/include/DeckLinkAPI.h	/^    bmdModeHD1080p24                                   = \/* '24ps' *\/ 0x32347073,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080p25	decklink/include/DeckLinkAPI.h	/^    bmdModeHD1080p25                                   = \/* 'Hp25' *\/ 0x48703235,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080p2997	decklink/include/DeckLinkAPI.h	/^    bmdModeHD1080p2997                                 = \/* 'Hp29' *\/ 0x48703239,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080p30	decklink/include/DeckLinkAPI.h	/^    bmdModeHD1080p30                                   = \/* 'Hp30' *\/ 0x48703330,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080p50	decklink/include/DeckLinkAPI.h	/^    bmdModeHD1080p50                                   = \/* 'Hp50' *\/ 0x48703530,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080p5994	decklink/include/DeckLinkAPI.h	/^    bmdModeHD1080p5994                                 = \/* 'Hp59' *\/ 0x48703539,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080p6000	decklink/include/DeckLinkAPI.h	/^    bmdModeHD1080p6000                                 = \/* 'Hp60' *\/ 0x48703630, \/\/ N.B. This _really_ is 60.00 Hz.$/;"	e	enum:_BMDDisplayMode
+bmdModeHD720p50	decklink/include/DeckLinkAPI.h	/^    bmdModeHD720p50                                    = \/* 'hp50' *\/ 0x68703530,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD720p5994	decklink/include/DeckLinkAPI.h	/^    bmdModeHD720p5994                                  = \/* 'hp59' *\/ 0x68703539,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD720p60	decklink/include/DeckLinkAPI.h	/^    bmdModeHD720p60                                    = \/* 'hp60' *\/ 0x68703630,$/;"	e	enum:_BMDDisplayMode
+bmdModeNTSC	decklink/include/DeckLinkAPI.h	/^    bmdModeNTSC                                        = \/* 'ntsc' *\/ 0x6E747363,$/;"	e	enum:_BMDDisplayMode
+bmdModeNTSC2398	decklink/include/DeckLinkAPI.h	/^    bmdModeNTSC2398                                    = \/* 'nt23' *\/ 0x6E743233, \/\/ 3:2 pulldown$/;"	e	enum:_BMDDisplayMode
+bmdModePAL	decklink/include/DeckLinkAPI.h	/^    bmdModePAL                                         = \/* 'pal ' *\/ 0x70616C20,$/;"	e	enum:_BMDDisplayMode
+bmdNoVideoInputConversion	decklink/include/DeckLinkAPI.h	/^    bmdNoVideoInputConversion                          = \/* 'none' *\/ 0x6E6F6E65,$/;"	e	enum:_BMDVideoInputConversionMode
+bmdNoVideoOutputConversion	decklink/include/DeckLinkAPI.h	/^    bmdNoVideoOutputConversion                         = \/* 'none' *\/ 0x6E6F6E65,$/;"	e	enum:_BMDVideoOutputConversionMode
+bmdOutputFrameCompleted	decklink/include/DeckLinkAPI.h	/^    bmdOutputFrameCompleted,                          $/;"	e	enum:_BMDOutputFrameCompletionResult
+bmdOutputFrameDisplayedLate	decklink/include/DeckLinkAPI.h	/^    bmdOutputFrameDisplayedLate,                      $/;"	e	enum:_BMDOutputFrameCompletionResult
+bmdOutputFrameDropped	decklink/include/DeckLinkAPI.h	/^    bmdOutputFrameDropped,                            $/;"	e	enum:_BMDOutputFrameCompletionResult
+bmdOutputFrameFlushed	decklink/include/DeckLinkAPI.h	/^    bmdOutputFrameFlushed                             $/;"	e	enum:_BMDOutputFrameCompletionResult
+bmdProgressiveFrame	decklink/include/DeckLinkAPI.h	/^    bmdProgressiveFrame                                = \/* 'prog' *\/ 0x70726F67,$/;"	e	enum:_BMDFieldDominance
+bmdProgressiveSegmentedFrame	decklink/include/DeckLinkAPI.h	/^    bmdProgressiveSegmentedFrame                       = \/* 'psf ' *\/ 0x70736620$/;"	e	enum:_BMDFieldDominance
+bmdTimecodeFlagDefault	decklink/include/DeckLinkAPI.h	/^    bmdTimecodeFlagDefault                             = 0,$/;"	e	enum:_BMDTimecodeFlags
+bmdTimecodeIsDropFrame	decklink/include/DeckLinkAPI.h	/^    bmdTimecodeIsDropFrame                             = 1 << 0$/;"	e	enum:_BMDTimecodeFlags
+bmdTimecodeRP188	decklink/include/DeckLinkAPI.h	/^    bmdTimecodeRP188                                   = \/* 'rp18' *\/ 0x72703138,$/;"	e	enum:_BMDTimecodeFormat
+bmdTimecodeSerial	decklink/include/DeckLinkAPI.h	/^    bmdTimecodeSerial                                  = \/* 'seri' *\/ 0x73657269$/;"	e	enum:_BMDTimecodeFormat
+bmdTimecodeVITC	decklink/include/DeckLinkAPI.h	/^    bmdTimecodeVITC                                    = \/* 'vitc' *\/ 0x76697463,$/;"	e	enum:_BMDTimecodeFormat
+bmdUnknownFieldDominance	decklink/include/DeckLinkAPI.h	/^    bmdUnknownFieldDominance                           = 0,$/;"	e	enum:_BMDFieldDominance
+bmdUpperFieldFirst	decklink/include/DeckLinkAPI.h	/^    bmdUpperFieldFirst                                 = \/* 'uppr' *\/ 0x75707072,$/;"	e	enum:_BMDFieldDominance
+bmdVideoConnectionComponent	decklink/include/DeckLinkAPI.h	/^    bmdVideoConnectionComponent                        = \/* 'cpnt' *\/ 0x63706E74,$/;"	e	enum:_BMDVideoConnection
+bmdVideoConnectionComposite	decklink/include/DeckLinkAPI.h	/^    bmdVideoConnectionComposite                        = \/* 'cmst' *\/ 0x636D7374,$/;"	e	enum:_BMDVideoConnection
+bmdVideoConnectionHDMI	decklink/include/DeckLinkAPI.h	/^    bmdVideoConnectionHDMI                             = \/* 'hdmi' *\/ 0x68646D69,$/;"	e	enum:_BMDVideoConnection
+bmdVideoConnectionOpticalSDI	decklink/include/DeckLinkAPI.h	/^    bmdVideoConnectionOpticalSDI                       = \/* 'opti' *\/ 0x6F707469,$/;"	e	enum:_BMDVideoConnection
+bmdVideoConnectionSDI	decklink/include/DeckLinkAPI.h	/^    bmdVideoConnectionSDI                              = \/* 'sdi ' *\/ 0x73646920,$/;"	e	enum:_BMDVideoConnection
+bmdVideoConnectionSVideo	decklink/include/DeckLinkAPI.h	/^    bmdVideoConnectionSVideo                           = \/* 'svid' *\/ 0x73766964$/;"	e	enum:_BMDVideoConnection
+bmdVideoInputAnamorphicDownconversionFromHD1080	decklink/include/DeckLinkAPI.h	/^    bmdVideoInputAnamorphicDownconversionFromHD1080    = \/* '10am' *\/ 0x3130616D,$/;"	e	enum:_BMDVideoInputConversionMode
+bmdVideoInputAnamorphicDownconversionFromHD720	decklink/include/DeckLinkAPI.h	/^    bmdVideoInputAnamorphicDownconversionFromHD720     = \/* '72am' *\/ 0x3732616D,$/;"	e	enum:_BMDVideoInputConversionMode
+bmdVideoInputAnamorphicUpconversion	decklink/include/DeckLinkAPI.h	/^    bmdVideoInputAnamorphicUpconversion                = \/* 'amup' *\/ 0x616D7570$/;"	e	enum:_BMDVideoInputConversionMode
+bmdVideoInputColorspaceChanged	decklink/include/DeckLinkAPI.h	/^    bmdVideoInputColorspaceChanged                     = 1 << 2$/;"	e	enum:_BMDVideoInputFormatChangedEvents
+bmdVideoInputDisplayModeChanged	decklink/include/DeckLinkAPI.h	/^    bmdVideoInputDisplayModeChanged                    = 1 << 0,$/;"	e	enum:_BMDVideoInputFormatChangedEvents
+bmdVideoInputEnableFormatDetection	decklink/include/DeckLinkAPI.h	/^    bmdVideoInputEnableFormatDetection                 = 1 << 0$/;"	e	enum:_BMDVideoInputFlags
+bmdVideoInputFieldDominanceChanged	decklink/include/DeckLinkAPI.h	/^    bmdVideoInputFieldDominanceChanged                 = 1 << 1,$/;"	e	enum:_BMDVideoInputFormatChangedEvents
+bmdVideoInputFlagDefault	decklink/include/DeckLinkAPI.h	/^    bmdVideoInputFlagDefault                           = 0,$/;"	e	enum:_BMDVideoInputFlags
+bmdVideoInputLetterboxDownconversionFromHD1080	decklink/include/DeckLinkAPI.h	/^    bmdVideoInputLetterboxDownconversionFromHD1080     = \/* '10lb' *\/ 0x31306C62,$/;"	e	enum:_BMDVideoInputConversionMode
+bmdVideoInputLetterboxDownconversionFromHD720	decklink/include/DeckLinkAPI.h	/^    bmdVideoInputLetterboxDownconversionFromHD720      = \/* '72lb' *\/ 0x37326C62,$/;"	e	enum:_BMDVideoInputConversionMode
+bmdVideoInputLetterboxUpconversion	decklink/include/DeckLinkAPI.h	/^    bmdVideoInputLetterboxUpconversion                 = \/* 'lbup' *\/ 0x6C627570,$/;"	e	enum:_BMDVideoInputConversionMode
+bmdVideoOutputAnamorphicDownonversion	decklink/include/DeckLinkAPI.h	/^    bmdVideoOutputAnamorphicDownonversion              = \/* 'amph' *\/ 0x616D7068,$/;"	e	enum:_BMDVideoOutputConversionMode
+bmdVideoOutputFlagDefault	decklink/include/DeckLinkAPI.h	/^    bmdVideoOutputFlagDefault                          = 0,$/;"	e	enum:_BMDVideoOutputFlags
+bmdVideoOutputHD720toHD1080Conversion	decklink/include/DeckLinkAPI.h	/^    bmdVideoOutputHD720toHD1080Conversion              = \/* '720c' *\/ 0x37323063,$/;"	e	enum:_BMDVideoOutputConversionMode
+bmdVideoOutputHardwareAnamorphicDownconversion	decklink/include/DeckLinkAPI.h	/^    bmdVideoOutputHardwareAnamorphicDownconversion     = \/* 'HWam' *\/ 0x4857616D,$/;"	e	enum:_BMDVideoOutputConversionMode
+bmdVideoOutputHardwareCenterCutDownconversion	decklink/include/DeckLinkAPI.h	/^    bmdVideoOutputHardwareCenterCutDownconversion      = \/* 'HWcc' *\/ 0x48576363$/;"	e	enum:_BMDVideoOutputConversionMode
+bmdVideoOutputHardwareLetterboxDownconversion	decklink/include/DeckLinkAPI.h	/^    bmdVideoOutputHardwareLetterboxDownconversion      = \/* 'HWlb' *\/ 0x48576C62,$/;"	e	enum:_BMDVideoOutputConversionMode
+bmdVideoOutputLetterboxDownonversion	decklink/include/DeckLinkAPI.h	/^    bmdVideoOutputLetterboxDownonversion               = \/* 'ltbx' *\/ 0x6C746278,$/;"	e	enum:_BMDVideoOutputConversionMode
+bmdVideoOutputRP188	decklink/include/DeckLinkAPI.h	/^    bmdVideoOutputRP188                                = 1 << 0,$/;"	e	enum:_BMDVideoOutputFlags
+bmdVideoOutputVANC	decklink/include/DeckLinkAPI.h	/^    bmdVideoOutputVANC                                 = 1 << 1$/;"	e	enum:_BMDVideoOutputFlags
+byte	decklink/dxt.h	/^typedef unsigned char byte;$/;"	t
+byte	decklink/dxt_cuda.h	/^typedef unsigned char byte;$/;"	t
+byte0	decklink/include/LinuxCOM.h	/^	unsigned char byte0;$/;"	m	struct:REFIID
+byte1	decklink/include/LinuxCOM.h	/^	unsigned char byte1;$/;"	m	struct:REFIID
+byte10	decklink/include/LinuxCOM.h	/^	unsigned char byte10;$/;"	m	struct:REFIID
+byte11	decklink/include/LinuxCOM.h	/^	unsigned char byte11;$/;"	m	struct:REFIID
+byte12	decklink/include/LinuxCOM.h	/^	unsigned char byte12;$/;"	m	struct:REFIID
+byte13	decklink/include/LinuxCOM.h	/^	unsigned char byte13;$/;"	m	struct:REFIID
+byte14	decklink/include/LinuxCOM.h	/^	unsigned char byte14;$/;"	m	struct:REFIID
+byte15	decklink/include/LinuxCOM.h	/^	unsigned char byte15;$/;"	m	struct:REFIID
+byte2	decklink/include/LinuxCOM.h	/^	unsigned char byte2;$/;"	m	struct:REFIID
+byte3	decklink/include/LinuxCOM.h	/^	unsigned char byte3;$/;"	m	struct:REFIID
+byte4	decklink/include/LinuxCOM.h	/^	unsigned char byte4;$/;"	m	struct:REFIID
+byte5	decklink/include/LinuxCOM.h	/^	unsigned char byte5;$/;"	m	struct:REFIID
+byte6	decklink/include/LinuxCOM.h	/^	unsigned char byte6;$/;"	m	struct:REFIID
+byte7	decklink/include/LinuxCOM.h	/^	unsigned char byte7;$/;"	m	struct:REFIID
+byte8	decklink/include/LinuxCOM.h	/^	unsigned char byte8;$/;"	m	struct:REFIID
+byte9	decklink/include/LinuxCOM.h	/^	unsigned char byte9;$/;"	m	struct:REFIID
+caps	dds.h	/^    DDSCaps caps;$/;"	m	struct:DDSHeader
+caps1	dds.h	/^    uint caps1;$/;"	m	struct:DDSCaps
+caps2	dds.h	/^    uint caps2;$/;"	m	struct:DDSCaps
+caps3	dds.h	/^    uint caps3;$/;"	m	struct:DDSCaps
+caps4	dds.h	/^    uint caps4;$/;"	m	struct:DDSCaps
+capture	decklink/decklinkcapture.cpp	/^void capture(int device, int mode, int connection)$/;"	f
+compressedSize	decklink/decklinkcapture.cpp	/^uint memSize, compressedSize;	$/;"	v
+cufftSafeCall	decklink/cutil_inline_runtime.h	36;"	d
+cutGetMaxGflopsDeviceId	decklink/cutil_inline_runtime.h	/^inline int cutGetMaxGflopsDeviceId()$/;"	f
+cutGetMaxGflopsGraphicsDeviceId	decklink/cutil_inline_runtime.h	/^inline int cutGetMaxGflopsGraphicsDeviceId()$/;"	f
+cutilCheckError	decklink/cutil_inline_runtime.h	37;"	d
+cutilCheckMsg	decklink/cutil_inline_runtime.h	38;"	d
+cutilChooseCudaDevice	decklink/cutil_inline_runtime.h	/^    inline int cutilChooseCudaDevice(int ARGC, char **ARGV) { }$/;"	f
+cutilChooseCudaDevice	decklink/cutil_inline_runtime.h	/^    inline int cutilChooseCudaDevice(int argc, char **argv)$/;"	f
+cutilCondition	decklink/cutil_inline_runtime.h	40;"	d
+cutilCudaCapabilities	decklink/cutil_inline_runtime.h	/^inline bool cutilCudaCapabilities(int major_version, int minor_version)$/;"	f
+cutilCudaCheckCtxLost	decklink/cutil_inline_runtime.h	/^inline void cutilCudaCheckCtxLost(const char *errorMessage, const char *file, const int line ) $/;"	f
+cutilDeviceInit	decklink/cutil_inline_runtime.h	/^    inline int cutilDeviceInit(int ARGC, char **ARGV) { }$/;"	f
+cutilDeviceInit	decklink/cutil_inline_runtime.h	/^    inline int cutilDeviceInit(int ARGC, char **ARGV)$/;"	f
+cutilExit	decklink/cutil_inline_runtime.h	41;"	d
+cutilSafeCall	decklink/cutil_inline_runtime.h	34;"	d
+cutilSafeCallNoSync	decklink/cutil_inline_runtime.h	33;"	d
+cutilSafeMalloc	decklink/cutil_inline_runtime.h	39;"	d
+cutilSafeThreadSync	decklink/cutil_inline_runtime.h	35;"	d
+d_data	decklink/decklinkcapture.cpp	/^uint *d_data, *d_rgba, *d_result;	$/;"	v
+d_result	decklink/decklinkcapture.cpp	/^uint *d_data, *d_rgba, *d_result;	$/;"	v
+d_rgba	decklink/decklinkcapture.cpp	/^uint *d_data, *d_rgba, *d_result;	$/;"	v
+data_path	decklink/util.h	/^class data_path$/;"	c
+depth	dds.h	/^    uint depth;$/;"	m	struct:DDSHeader
+dropFrame	decklink/decklinkcapture.cpp	/^uint dropFrame=0;$/;"	v
+dword	decklink/dxt.h	/^typedef unsigned int dword;$/;"	t
+err	decklink/decklinkcapture.cpp	/^cudaError_t err;$/;"	v
+file_path	decklink/util.h	/^  std::string              file_path;$/;"	m	class:data_path
+flags	dds.h	/^    uint flags;$/;"	m	struct:DDSHeader
+flags	dds.h	/^    uint flags;$/;"	m	struct:DDSPixelFormat
+fourcc	dds.h	/^    uint fourcc;$/;"	m	struct:DDSHeader
+fourcc	dds.h	/^    uint fourcc;$/;"	m	struct:DDSPixelFormat
+frame_height	STIP.h	/^	unsigned short frame_height;$/;"	m	struct:_STIP_Initiation_Header
+frame_idx	STIP.h	/^	unsigned int frame_idx;$/;"	m	struct:_STIP_Transport_Header
+frame_width	STIP.h	/^	unsigned short frame_width;$/;"	m	struct:_STIP_Initiation_Header
+framecount	decklink/decklinkcapture.cpp	/^    int     framecount;$/;"	m	class:VideoDelegate	file:
+gCreateIteratorFunc	decklink/include/DeckLinkAPIDispatch.cpp	/^static CreateIteratorFunc				gCreateIteratorFunc = NULL;$/;"	v	file:
+gCreateOpenGLPreviewFunc	decklink/include/DeckLinkAPIDispatch.cpp	/^static CreateOpenGLScreenPreviewHelperFunc	gCreateOpenGLPreviewFunc = NULL;$/;"	v	file:
+gDeckLinkOnceControl	decklink/include/DeckLinkAPIDispatch.cpp	/^static pthread_once_t					gDeckLinkOnceControl = PTHREAD_ONCE_INIT;$/;"	v	file:
+gPreviewOnceControl	decklink/include/DeckLinkAPIDispatch.cpp	/^static pthread_once_t					gPreviewOnceControl = PTHREAD_ONCE_INIT;$/;"	v	file:
+gmask	dds.h	/^    uint gmask;$/;"	m	struct:DDSPixelFormat
+hdr_len	STIP.h	/^	unsigned char hdr_len;$/;"	m	struct:_STIP_Initiation_Header
+hdr_len	STIP.h	/^	unsigned char hdr_len;$/;"	m	struct:_STIP_Transport_Header
+header	STIP.h	/^        STIP_hdr header;$/;"	m	struct:_packet
+height	dds.h	/^    uint height;$/;"	m	struct:DDSHeader
+height	decklink/libdxt.cpp	/^	int width, height;$/;"	m	struct:_work_t	file:
+i	stip_receiver.cpp	/^int i=0;$/;"	v
+idx	stip_receiver.cpp	/^unsigned idx=0;$/;"	v
+in	decklink/libdxt.cpp	/^	byte *in, *out;$/;"	m	struct:_work_t	file:
+kDeckLinkAPI_Name	decklink/include/DeckLinkAPIDispatch.cpp	34;"	d	file:
+lastTime	decklink/decklinkcapture.cpp	/^	double  lastTime;$/;"	m	class:VideoDelegate	file:
+mRefCount	decklink/decklinkcapture.cpp	/^	int32_t mRefCount;$/;"	m	class:VideoDelegate	file:
+main	decklink/decklinkcapture.cpp	/^int main (int argc, char** argv)$/;"	f
+main	decklinkrecv.cpp	/^int main(int argc, char **argv)$/;"	f
+main	stip_receiver.cpp	/^int main (int argc, char** argv)$/;"	f
+max	decklink/cutil_inline_runtime.h	21;"	d
+max_video_frame	STIP.h	/^	unsigned int max_video_frame;$/;"	m	struct:_STIP_Initiation_Header
+memSize	decklink/decklinkcapture.cpp	/^uint memSize, compressedSize;	$/;"	v
+memalign	decklink/libdxt.cpp	42;"	d	file:
+memalign	decklink/util.h	82;"	d
+memalign	decklink/util.h	90;"	d
+memfree	decklink/util.h	92;"	d
+memfree	decklink/util.h	94;"	d
+min	decklink/cutil_inline_runtime.h	20;"	d
+mipmapcount	dds.h	/^    uint mipmapcount;$/;"	m	struct:DDSHeader
+nbb	decklink/libdxt.cpp	/^	int nbb;$/;"	m	struct:_work_t	file:
+notused	dds.h	/^    uint notused;$/;"	m	struct:DDSHeader
+out	decklink/libdxt.cpp	/^	byte *in, *out;$/;"	m	struct:_work_t	file:
+path	decklink/util.h	/^  std::vector<std::string> path;$/;"	m	class:data_path
+path_name	decklink/util.h	/^  std::string              path_name;$/;"	m	class:data_path
+payload	STIP.h	/^        char payload[PKT_SIZE];$/;"	m	struct:_packet
+pblock_count	STIP.h	/^	unsigned int pblock_count;$/;"	m	struct:_STIP_Transport_Header
+pblock_idx	STIP.h	/^	unsigned int pblock_idx;$/;"	m	struct:_STIP_Transport_Header
+pf	dds.h	/^    DDSPixelFormat pf;$/;"	m	struct:DDSHeader
+pitch	dds.h	/^    uint pitch;$/;"	m	struct:DDSHeader
+print_capabilities	decklink/decklinkcapture.cpp	/^void print_capabilities()$/;"	f
+print_input_capabilities	decklink/decklinkcapture.cpp	/^void	print_input_capabilities (IDeckLink* deckLink)$/;"	f
+print_input_modes	decklink/decklinkcapture.cpp	/^void print_input_modes (IDeckLink* deckLink)$/;"	f
+print_output_capabilities	decklink/decklinkcapture.cpp	/^void	print_output_capabilities (IDeckLink* deckLink)$/;"	f
+print_output_modes	decklink/decklinkcapture.cpp	/^void	print_output_modes (IDeckLink* deckLink)$/;"	f
+proc_bpb	STIP.h	/^	unsigned short proc_bpb;$/;"	m	struct:_STIP_Initiation_Header
+proc_px_height	STIP.h	/^	unsigned char proc_px_height;$/;"	m	struct:_STIP_Initiation_Header
+proc_px_width	STIP.h	/^	unsigned char proc_px_width;$/;"	m	struct:_STIP_Initiation_Header
+proc_video	STIP.h	/^	unsigned short proc_video;$/;"	m	struct:_STIP_Initiation_Header
+reserved	dds.h	/^    uint reserved[11];$/;"	m	struct:DDSHeader
+reservered	STIP.h	/^	unsigned short reservered;$/;"	m	struct:_STIP_Initiation_Header
+reservered	STIP.h	/^	unsigned short reservered;$/;"	m	struct:_STIP_Transport_Header
+rmask	dds.h	/^    uint rmask;$/;"	m	struct:DDSPixelFormat
+sageInf	decklink/decklinkcapture.cpp	/^sail sageInf; \/\/ sail object$/;"	v
+sageInf	stip_receiver.cpp	/^sail sageInf; \/\/ sail object$/;"	v
+saveframe	decklinkrecv.cpp	/^void saveframe(unsigned char *data, int w, int h, unsigned int write_size) {$/;"	f
+saveframe	stip_receiver.cpp	/^void saveframe(unsigned char *data, int w, int h, unsigned int write_size) {$/;"	f
+size	dds.h	/^    uint size;$/;"	m	struct:DDSHeader
+size	dds.h	/^    uint size;$/;"	m	struct:DDSPixelFormat
+slave1	decklink/libdxt.cpp	/^void *slave1(void *arg)$/;"	f
+slave5	decklink/libdxt.cpp	/^void *slave5(void *arg)$/;"	f
+slave5ycocg	decklink/libdxt.cpp	/^void *slave5ycocg(void *arg)$/;"	f
+src_bpb	STIP.h	/^	unsigned short src_bpb;$/;"	m	struct:_STIP_Initiation_Header
+src_px_height	STIP.h	/^	unsigned char src_px_height;$/;"	m	struct:_STIP_Initiation_Header
+src_px_width	STIP.h	/^	unsigned char src_px_width;$/;"	m	struct:_STIP_Initiation_Header
+src_video	STIP.h	/^	unsigned short src_video;$/;"	m	struct:_STIP_Initiation_Header
+uint	dds.h	/^typedef unsigned int uint;$/;"	t
+useDXT	decklink/decklinkcapture.cpp	/^int useDXT;$/;"	v
+ushort	dds.h	/^typedef unsigned short ushort;$/;"	t
+version	STIP.h	/^	unsigned char version;$/;"	m	struct:_STIP_Initiation_Header
+version	STIP.h	/^	unsigned char version;$/;"	m	struct:_STIP_Transport_Header
+video_fps	STIP.h	/^	unsigned short video_fps;$/;"	m	struct:_STIP_Initiation_Header
+width	dds.h	/^    uint width;$/;"	m	struct:DDSHeader
+width	decklink/libdxt.cpp	/^	int width, height;$/;"	m	struct:_work_t	file:
+word	decklink/dxt.h	/^typedef unsigned short word;$/;"	t
+work_t	decklink/libdxt.cpp	/^} work_t;$/;"	t	typeref:struct:_work_t	file:
+~IDeckLinkAPIInformation	decklink/include/DeckLinkAPI.h	/^    virtual ~IDeckLinkAPIInformation () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkAPIInformation
+~IDeckLinkAttributes	decklink/include/DeckLinkAPI.h	/^    virtual ~IDeckLinkAttributes () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkAttributes
+~IDeckLinkAudioInputPacket	decklink/include/DeckLinkAPI.h	/^    virtual ~IDeckLinkAudioInputPacket () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkAudioInputPacket
+~IDeckLinkDisplayMode	decklink/include/DeckLinkAPI.h	/^    virtual ~IDeckLinkDisplayMode () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkDisplayMode
+~IDeckLinkDisplayModeIterator	decklink/include/DeckLinkAPI.h	/^    virtual ~IDeckLinkDisplayModeIterator () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkDisplayModeIterator
+~IDeckLinkGLScreenPreviewHelper	decklink/include/DeckLinkAPI.h	/^    virtual ~IDeckLinkGLScreenPreviewHelper () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkGLScreenPreviewHelper
+~IDeckLinkInput	decklink/include/DeckLinkAPI.h	/^    virtual ~IDeckLinkInput () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkInput
+~IDeckLinkInputCallback	decklink/include/DeckLinkAPI.h	/^    virtual ~IDeckLinkInputCallback () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkInputCallback
+~IDeckLinkInputCallback_v7_3	decklink/include/DeckLinkAPI_v7_3.h	/^    virtual ~IDeckLinkInputCallback_v7_3 () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkInputCallback_v7_3
+~IDeckLinkInput_v7_3	decklink/include/DeckLinkAPI_v7_3.h	/^    virtual ~IDeckLinkInput_v7_3 () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkInput_v7_3
+~IDeckLinkKeyer	decklink/include/DeckLinkAPI.h	/^    virtual ~IDeckLinkKeyer () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkKeyer
+~IDeckLinkMutableVideoFrame	decklink/include/DeckLinkAPI.h	/^    virtual ~IDeckLinkMutableVideoFrame () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkMutableVideoFrame
+~IDeckLinkOutput	decklink/include/DeckLinkAPI.h	/^    virtual ~IDeckLinkOutput () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkOutput
+~IDeckLinkOutput_v7_3	decklink/include/DeckLinkAPI_v7_3.h	/^    virtual ~IDeckLinkOutput_v7_3 () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkOutput_v7_3
+~IDeckLinkScreenPreviewCallback	decklink/include/DeckLinkAPI.h	/^    virtual ~IDeckLinkScreenPreviewCallback () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkScreenPreviewCallback
+~IDeckLinkTimecode	decklink/include/DeckLinkAPI.h	/^    virtual ~IDeckLinkTimecode () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkTimecode
+~IDeckLinkVideoFrame	decklink/include/DeckLinkAPI.h	/^    virtual ~IDeckLinkVideoFrame () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkVideoFrame
+~IDeckLinkVideoFrameAncillary	decklink/include/DeckLinkAPI.h	/^    virtual ~IDeckLinkVideoFrameAncillary () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkVideoFrameAncillary
+~IDeckLinkVideoInputFrame	decklink/include/DeckLinkAPI.h	/^    virtual ~IDeckLinkVideoInputFrame () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkVideoInputFrame
+~IDeckLinkVideoInputFrame_v7_3	decklink/include/DeckLinkAPI_v7_3.h	/^    virtual ~IDeckLinkVideoInputFrame_v7_3 () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkVideoInputFrame_v7_3
+~IDeckLinkVideoOutputCallback	decklink/include/DeckLinkAPI.h	/^    virtual ~IDeckLinkVideoOutputCallback () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkVideoOutputCallback

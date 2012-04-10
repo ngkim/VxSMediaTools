@@ -1,0 +1,378 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AddRef	decklinksender.cpp	/^	virtual ULONG		AddRef (void) {$/;"	f	class:VideoDelegate
+BLOCK	STIP.h	44;"	d
+BLOCK_SIZE	STIP.h	43;"	d
+BMDAnalogVideoFlags	include/DeckLinkAPI.h	/^typedef uint32_t BMDAnalogVideoFlags;$/;"	t
+BMDAudioConnection	include/DeckLinkAPI.h	/^typedef uint32_t BMDAudioConnection;$/;"	t
+BMDAudioOutputStreamType	include/DeckLinkAPI.h	/^typedef uint32_t BMDAudioOutputStreamType;$/;"	t
+BMDAudioSampleRate	include/DeckLinkAPI.h	/^typedef uint32_t BMDAudioSampleRate;$/;"	t
+BMDAudioSampleType	include/DeckLinkAPI.h	/^typedef uint32_t BMDAudioSampleType;$/;"	t
+BMDDeckLinkAPIInformationID	include/DeckLinkAPI.h	/^typedef uint32_t BMDDeckLinkAPIInformationID;$/;"	t
+BMDDeckLinkAPIVersion	include/DeckLinkAPI.h	/^    BMDDeckLinkAPIVersion                              = \/* 'vers' *\/ 0x76657273$/;"	e	enum:_BMDDeckLinkAPIInformationID
+BMDDeckLinkAttributeID	include/DeckLinkAPI.h	/^typedef uint32_t BMDDeckLinkAttributeID;$/;"	t
+BMDDeckLinkHasSerialPort	include/DeckLinkAPI.h	/^    BMDDeckLinkHasSerialPort                           = \/* 'hspt' *\/ 0x68737074,$/;"	e	enum:_BMDDeckLinkAttributeID
+BMDDeckLinkMaximumAudioChannels	include/DeckLinkAPI.h	/^    BMDDeckLinkMaximumAudioChannels                    = \/* 'mach' *\/ 0x6D616368,$/;"	e	enum:_BMDDeckLinkAttributeID
+BMDDeckLinkSerialPortDeviceName	include/DeckLinkAPI.h	/^    BMDDeckLinkSerialPortDeviceName                    = \/* 'slpn' *\/ 0x736C706E$/;"	e	enum:_BMDDeckLinkAttributeID
+BMDDeckLinkSupportsExternalKeying	include/DeckLinkAPI.h	/^    BMDDeckLinkSupportsExternalKeying                  = \/* 'keye' *\/ 0x6B657965,$/;"	e	enum:_BMDDeckLinkAttributeID
+BMDDeckLinkSupportsHDKeying	include/DeckLinkAPI.h	/^    BMDDeckLinkSupportsHDKeying                        = \/* 'keyh' *\/ 0x6B657968,$/;"	e	enum:_BMDDeckLinkAttributeID
+BMDDeckLinkSupportsInputFormatDetection	include/DeckLinkAPI.h	/^    BMDDeckLinkSupportsInputFormatDetection            = \/* 'infd' *\/ 0x696E6664,$/;"	e	enum:_BMDDeckLinkAttributeID
+BMDDeckLinkSupportsInternalKeying	include/DeckLinkAPI.h	/^    BMDDeckLinkSupportsInternalKeying                  = \/* 'keyi' *\/ 0x6B657969,$/;"	e	enum:_BMDDeckLinkAttributeID
+BMDDetectedVideoInputFormatFlags	include/DeckLinkAPI.h	/^typedef uint32_t BMDDetectedVideoInputFormatFlags;$/;"	t
+BMDDisplayMode	include/DeckLinkAPI.h	/^typedef uint32_t BMDDisplayMode;$/;"	t
+BMDDisplayModeSupport	include/DeckLinkAPI.h	/^typedef uint32_t BMDDisplayModeSupport;$/;"	t
+BMDFieldDominance	include/DeckLinkAPI.h	/^typedef uint32_t BMDFieldDominance;$/;"	t
+BMDFrameFlags	include/DeckLinkAPI.h	/^typedef uint32_t BMDFrameFlags;$/;"	t
+BMDOutputFrameCompletionResult	include/DeckLinkAPI.h	/^typedef uint32_t BMDOutputFrameCompletionResult;$/;"	t
+BMDPixelFormat	include/DeckLinkAPI.h	/^typedef uint32_t BMDPixelFormat;$/;"	t
+BMDTimeScale	include/DeckLinkAPI.h	/^typedef int64_t BMDTimeScale;$/;"	t
+BMDTimeValue	include/DeckLinkAPI.h	/^typedef int64_t BMDTimeValue;$/;"	t
+BMDTimecodeBCD	include/DeckLinkAPI.h	/^typedef uint32_t BMDTimecodeBCD;$/;"	t
+BMDTimecodeFlags	include/DeckLinkAPI.h	/^typedef uint32_t BMDTimecodeFlags;$/;"	t
+BMDTimecodeFormat	include/DeckLinkAPI.h	/^typedef uint32_t BMDTimecodeFormat;$/;"	t
+BMDVideoConnection	include/DeckLinkAPI.h	/^typedef uint32_t BMDVideoConnection;$/;"	t
+BMDVideoInputConversionMode	include/DeckLinkAPI.h	/^typedef uint32_t BMDVideoInputConversionMode;$/;"	t
+BMDVideoInputFlags	include/DeckLinkAPI.h	/^typedef uint32_t BMDVideoInputFlags;$/;"	t
+BMDVideoInputFormatChangedEvents	include/DeckLinkAPI.h	/^typedef uint32_t BMDVideoInputFormatChangedEvents;$/;"	t
+BMDVideoOutputConversionMode	include/DeckLinkAPI.h	/^typedef uint32_t BMDVideoOutputConversionMode;$/;"	t
+BMDVideoOutputFlags	include/DeckLinkAPI.h	/^typedef uint32_t BMDVideoOutputFlags;$/;"	t
+CFUUIDBytes	include/LinuxCOM.h	/^typedef REFIID CFUUIDBytes;$/;"	t
+CFUUIDGetUUIDBytes	include/LinuxCOM.h	52;"	d
+COMPILER	Makefile	/^COMPILER=g++$/;"	m
+COMPILER_FLAGS	Makefile	/^COMPILER_FLAGS= -Wno-multichar -I$(SDK_PATH) -fno-rtti -O3 $/;"	m
+CreateDeckLinkIteratorInstance	include/DeckLinkAPIDispatch.cpp	/^IDeckLinkIterator*		CreateDeckLinkIteratorInstance (void)$/;"	f
+CreateIteratorFunc	include/DeckLinkAPIDispatch.cpp	/^typedef IDeckLinkIterator* (*CreateIteratorFunc)(void);$/;"	t	file:
+CreateOpenGLScreenPreviewHelper	include/DeckLinkAPIDispatch.cpp	/^IDeckLinkGLScreenPreviewHelper*		CreateOpenGLScreenPreviewHelper (void)$/;"	f
+CreateOpenGLScreenPreviewHelperFunc	include/DeckLinkAPIDispatch.cpp	/^typedef IDeckLinkGLScreenPreviewHelper* (*CreateOpenGLScreenPreviewHelperFunc)(void);$/;"	t	file:
+DXT1	STIP.h	38;"	d
+DXT1A	STIP.h	39;"	d
+DXT5	STIP.h	40;"	d
+E_ABORT	include/LinuxCOM.h	79;"	d
+E_ACCESSDENIED	include/LinuxCOM.h	81;"	d
+E_FAIL	include/LinuxCOM.h	80;"	d
+E_HANDLE	include/LinuxCOM.h	78;"	d
+E_INVALIDARG	include/LinuxCOM.h	75;"	d
+E_NOINTERFACE	include/LinuxCOM.h	76;"	d
+E_NOTIMPL	include/LinuxCOM.h	73;"	d
+E_OUTOFMEMORY	include/LinuxCOM.h	74;"	d
+E_POINTER	include/LinuxCOM.h	77;"	d
+E_UNEXPECTED	include/LinuxCOM.h	72;"	d
+FAILED	include/LinuxCOM.h	59;"	d
+GetFrameSize	decklinksender.cpp	/^GetFrameSize(int card, int mode, int *winWidth, int *winHeight)$/;"	f
+H263	STIP.h	34;"	d
+H264	STIP.h	35;"	d
+HRESULT	include/LinuxCOM.h	/^typedef int HRESULT;$/;"	t
+HRESULT_CODE	include/LinuxCOM.h	62;"	d
+HRESULT_FACILITY	include/LinuxCOM.h	63;"	d
+HRESULT_SEVERITY	include/LinuxCOM.h	64;"	d
+IDeckLink	include/DeckLinkAPI.h	/^class IDeckLink : public IUnknown$/;"	c
+IDeckLinkAPIInformation	include/DeckLinkAPI.h	/^class IDeckLinkAPIInformation : public IUnknown$/;"	c
+IDeckLinkAttributes	include/DeckLinkAPI.h	/^class IDeckLinkAttributes : public IUnknown$/;"	c
+IDeckLinkAudioInputPacket	include/DeckLinkAPI.h	/^class IDeckLinkAudioInputPacket : public IUnknown$/;"	c
+IDeckLinkAudioInputPacket_v7_1	include/DeckLinkAPI_v7_1.h	/^class IDeckLinkAudioInputPacket_v7_1 : public IUnknown$/;"	c
+IDeckLinkAudioOutputCallback	include/DeckLinkAPI.h	/^class IDeckLinkAudioOutputCallback : public IUnknown$/;"	c
+IDeckLinkConfiguration	include/DeckLinkAPI.h	/^class IDeckLinkConfiguration : public IUnknown$/;"	c
+IDeckLinkDisplayMode	include/DeckLinkAPI.h	/^class IDeckLinkDisplayMode : public IUnknown$/;"	c
+IDeckLinkDisplayModeIterator	include/DeckLinkAPI.h	/^class IDeckLinkDisplayModeIterator : public IUnknown$/;"	c
+IDeckLinkDisplayModeIterator_v7_1	include/DeckLinkAPI_v7_1.h	/^class IDeckLinkDisplayModeIterator_v7_1 : public IUnknown$/;"	c
+IDeckLinkDisplayMode_v7_1	include/DeckLinkAPI_v7_1.h	/^class IDeckLinkDisplayMode_v7_1 : public IUnknown$/;"	c
+IDeckLinkGLScreenPreviewHelper	include/DeckLinkAPI.h	/^class IDeckLinkGLScreenPreviewHelper : public IUnknown$/;"	c
+IDeckLinkInput	include/DeckLinkAPI.h	/^class IDeckLinkInput : public IUnknown$/;"	c
+IDeckLinkInputCallback	include/DeckLinkAPI.h	/^class IDeckLinkInputCallback : public IUnknown$/;"	c
+IDeckLinkInputCallback_v7_1	include/DeckLinkAPI_v7_1.h	/^class IDeckLinkInputCallback_v7_1 : public IUnknown$/;"	c
+IDeckLinkInputCallback_v7_3	include/DeckLinkAPI_v7_3.h	/^class IDeckLinkInputCallback_v7_3 : public IUnknown$/;"	c
+IDeckLinkInput_v7_1	include/DeckLinkAPI_v7_1.h	/^class IDeckLinkInput_v7_1 : public IUnknown$/;"	c
+IDeckLinkInput_v7_3	include/DeckLinkAPI_v7_3.h	/^class IDeckLinkInput_v7_3 : public IUnknown$/;"	c
+IDeckLinkIterator	include/DeckLinkAPI.h	/^class IDeckLinkIterator : public IUnknown$/;"	c
+IDeckLinkKeyer	include/DeckLinkAPI.h	/^class IDeckLinkKeyer : public IUnknown$/;"	c
+IDeckLinkMemoryAllocator	include/DeckLinkAPI.h	/^class IDeckLinkMemoryAllocator : public IUnknown$/;"	c
+IDeckLinkMutableVideoFrame	include/DeckLinkAPI.h	/^class IDeckLinkMutableVideoFrame : public IDeckLinkVideoFrame$/;"	c
+IDeckLinkOutput	include/DeckLinkAPI.h	/^class IDeckLinkOutput : public IUnknown$/;"	c
+IDeckLinkOutput_v7_1	include/DeckLinkAPI_v7_1.h	/^class IDeckLinkOutput_v7_1 : public IUnknown$/;"	c
+IDeckLinkOutput_v7_3	include/DeckLinkAPI_v7_3.h	/^class IDeckLinkOutput_v7_3 : public IUnknown$/;"	c
+IDeckLinkScreenPreviewCallback	include/DeckLinkAPI.h	/^class IDeckLinkScreenPreviewCallback : public IUnknown$/;"	c
+IDeckLinkTimecode	include/DeckLinkAPI.h	/^class IDeckLinkTimecode : public IUnknown$/;"	c
+IDeckLinkVideoFrame	include/DeckLinkAPI.h	/^class IDeckLinkVideoFrame : public IUnknown$/;"	c
+IDeckLinkVideoFrameAncillary	include/DeckLinkAPI.h	/^class IDeckLinkVideoFrameAncillary : public IUnknown$/;"	c
+IDeckLinkVideoFrame_v7_1	include/DeckLinkAPI_v7_1.h	/^class IDeckLinkVideoFrame_v7_1 : public IUnknown$/;"	c
+IDeckLinkVideoInputFrame	include/DeckLinkAPI.h	/^class IDeckLinkVideoInputFrame : public IDeckLinkVideoFrame$/;"	c
+IDeckLinkVideoInputFrame_v7_1	include/DeckLinkAPI_v7_1.h	/^class IDeckLinkVideoInputFrame_v7_1 : public IDeckLinkVideoFrame_v7_1$/;"	c
+IDeckLinkVideoInputFrame_v7_3	include/DeckLinkAPI_v7_3.h	/^class IDeckLinkVideoInputFrame_v7_3 : public IDeckLinkVideoFrame$/;"	c
+IDeckLinkVideoOutputCallback	include/DeckLinkAPI.h	/^class IDeckLinkVideoOutputCallback : public IUnknown$/;"	c
+IDeckLinkVideoOutputCallback_v7_1	include/DeckLinkAPI_v7_1.h	/^class IDeckLinkVideoOutputCallback_v7_1 : public IUnknown$/;"	c
+IID_IDeckLink	include/DeckLinkAPI.h	54;"	d
+IID_IDeckLinkAPIInformation	include/DeckLinkAPI.h	51;"	d
+IID_IDeckLinkAttributes	include/DeckLinkAPI.h	66;"	d
+IID_IDeckLinkAudioInputPacket	include/DeckLinkAPI.h	62;"	d
+IID_IDeckLinkAudioInputPacket_v7_1	include/DeckLinkAPI_v7_1.h	59;"	d
+IID_IDeckLinkAudioOutputCallback	include/DeckLinkAPI.h	49;"	d
+IID_IDeckLinkConfiguration	include/DeckLinkAPI.h	65;"	d
+IID_IDeckLinkDisplayMode	include/DeckLinkAPI.h	53;"	d
+IID_IDeckLinkDisplayModeIterator	include/DeckLinkAPI.h	52;"	d
+IID_IDeckLinkDisplayModeIterator_v7_1	include/DeckLinkAPI_v7_1.h	35;"	d
+IID_IDeckLinkDisplayMode_v7_1	include/DeckLinkAPI_v7_1.h	38;"	d
+IID_IDeckLinkGLScreenPreviewHelper	include/DeckLinkAPI.h	64;"	d
+IID_IDeckLinkInput	include/DeckLinkAPI.h	56;"	d
+IID_IDeckLinkInputCallback	include/DeckLinkAPI.h	47;"	d
+IID_IDeckLinkInputCallback_v7_1	include/DeckLinkAPI_v7_1.h	44;"	d
+IID_IDeckLinkInputCallback_v7_3	include/DeckLinkAPI_v7_3.h	37;"	d
+IID_IDeckLinkInput_v7_1	include/DeckLinkAPI_v7_1.h	50;"	d
+IID_IDeckLinkInput_v7_3	include/DeckLinkAPI_v7_3.h	39;"	d
+IID_IDeckLinkIterator	include/DeckLinkAPI.h	50;"	d
+IID_IDeckLinkKeyer	include/DeckLinkAPI.h	67;"	d
+IID_IDeckLinkMemoryAllocator	include/DeckLinkAPI.h	48;"	d
+IID_IDeckLinkMutableVideoFrame	include/DeckLinkAPI.h	59;"	d
+IID_IDeckLinkOutput	include/DeckLinkAPI.h	55;"	d
+IID_IDeckLinkOutput_v7_1	include/DeckLinkAPI_v7_1.h	47;"	d
+IID_IDeckLinkOutput_v7_3	include/DeckLinkAPI_v7_3.h	38;"	d
+IID_IDeckLinkScreenPreviewCallback	include/DeckLinkAPI.h	63;"	d
+IID_IDeckLinkTimecode	include/DeckLinkAPI.h	57;"	d
+IID_IDeckLinkVideoFrame	include/DeckLinkAPI.h	58;"	d
+IID_IDeckLinkVideoFrameAncillary	include/DeckLinkAPI.h	61;"	d
+IID_IDeckLinkVideoFrame_v7_1	include/DeckLinkAPI_v7_1.h	53;"	d
+IID_IDeckLinkVideoInputFrame	include/DeckLinkAPI.h	60;"	d
+IID_IDeckLinkVideoInputFrame_v7_1	include/DeckLinkAPI_v7_1.h	56;"	d
+IID_IDeckLinkVideoInputFrame_v7_3	include/DeckLinkAPI_v7_3.h	40;"	d
+IID_IDeckLinkVideoOutputCallback	include/DeckLinkAPI.h	46;"	d
+IID_IDeckLinkVideoOutputCallback_v7_1	include/DeckLinkAPI_v7_1.h	41;"	d
+IID_IUnknown	include/LinuxCOM.h	85;"	d
+IS_ERROR	include/LinuxCOM.h	61;"	d
+IUnknown	include/LinuxCOM.h	/^class IUnknown$/;"	c
+IUnknownUUID	include/LinuxCOM.h	86;"	d
+InitDeckLinkAPI	include/DeckLinkAPIDispatch.cpp	/^void	InitDeckLinkAPI (void)$/;"	f
+InitDeckLinkPreviewAPI	include/DeckLinkAPIDispatch.cpp	/^void	InitDeckLinkPreviewAPI (void)$/;"	f
+KDeckLinkPreviewAPI_Name	include/DeckLinkAPIDispatch.cpp	35;"	d	file:
+LIBS	Makefile	/^LIBS=-lpthread ${SUN_LIBS} -lm -ldl -lm -ldl$/;"	m
+LPVOID	include/LinuxCOM.h	/^typedef void *LPVOID;$/;"	t
+MAKE_HRESULT	include/LinuxCOM.h	68;"	d
+MPEG2PS	STIP.h	32;"	d
+MPEG2TS	STIP.h	31;"	d
+MPEG4	STIP.h	33;"	d
+PKT_HEADER	STIP.h	42;"	d
+PKT_SIZE	STIP.h	45;"	d
+PROJ_EXE	Makefile	/^PROJ_EXE=decklinksender$/;"	m
+Packet	STIP.h	/^} Packet;$/;"	t	typeref:struct:_packet
+PixelFrame	decklinksender.cpp	/^void *PixelFrame;$/;"	v
+QueryInterface	decklinksender.cpp	/^	virtual HRESULT		QueryInterface (REFIID iid, LPVOID *ppv)$/;"	f	class:VideoDelegate
+REFIID	include/LinuxCOM.h	/^struct REFIID$/;"	s
+RGB	STIP.h	29;"	d
+RGBA	STIP.h	30;"	d
+Release	decklinksender.cpp	/^	virtual ULONG		Release (void) {$/;"	f	class:VideoDelegate
+SDK_PATH	Makefile	/^SDK_PATH=include$/;"	m
+SEVERITY_ERROR	include/LinuxCOM.h	66;"	d
+SEVERITY_SUCCESS	include/LinuxCOM.h	65;"	d
+STDMETHODCALLTYPE	include/LinuxCOM.h	83;"	d
+STIP_hdr	STIP.h	/^typedef struct _STIP_Transport_Header STIP_hdr;$/;"	t	typeref:struct:_STIP_Transport_Header
+STIP_init	STIP.h	/^typedef struct _STIP_Initiation_Header STIP_init;$/;"	t	typeref:struct:_STIP_Initiation_Header
+SUCCEEDED	include/LinuxCOM.h	58;"	d
+S_FALSE	include/LinuxCOM.h	71;"	d
+S_OK	include/LinuxCOM.h	70;"	d
+ULONG	include/LinuxCOM.h	/^typedef unsigned long ULONG;$/;"	t
+VideoDelegate	decklinksender.cpp	/^    VideoDelegate () {$/;"	f	class:VideoDelegate
+VideoDelegate	decklinksender.cpp	/^class VideoDelegate : public IDeckLinkInputCallback$/;"	c	file:
+VideoInputFormatChanged	decklinksender.cpp	/^        virtual HRESULT VideoInputFormatChanged(BMDVideoInputFormatChangedEvents, IDeckLinkDisplayMode*, BMDDetectedVideoInputFormatFlags)$/;"	f	class:VideoDelegate
+VideoInputFrameArrived	decklinksender.cpp	/^HRESULT	VideoDelegate::VideoInputFrameArrived (IDeckLinkVideoInputFrame* arrivedFrame,$/;"	f	class:VideoDelegate
+YUV420	STIP.h	28;"	d
+YUV422	STIP.h	27;"	d
+YUV444	STIP.h	26;"	d
+_BMDAnalogVideoFlags	include/DeckLinkAPI.h	/^enum _BMDAnalogVideoFlags {$/;"	g
+_BMDAudioConnection	include/DeckLinkAPI.h	/^enum _BMDAudioConnection {$/;"	g
+_BMDAudioOutputStreamType	include/DeckLinkAPI.h	/^enum _BMDAudioOutputStreamType {$/;"	g
+_BMDAudioSampleRate	include/DeckLinkAPI.h	/^enum _BMDAudioSampleRate {$/;"	g
+_BMDAudioSampleType	include/DeckLinkAPI.h	/^enum _BMDAudioSampleType {$/;"	g
+_BMDDeckLinkAPIInformationID	include/DeckLinkAPI.h	/^enum _BMDDeckLinkAPIInformationID {$/;"	g
+_BMDDeckLinkAttributeID	include/DeckLinkAPI.h	/^enum _BMDDeckLinkAttributeID {$/;"	g
+_BMDDetectedVideoInputFormatFlags	include/DeckLinkAPI.h	/^enum _BMDDetectedVideoInputFormatFlags {$/;"	g
+_BMDDisplayMode	include/DeckLinkAPI.h	/^enum _BMDDisplayMode {$/;"	g
+_BMDDisplayModeSupport	include/DeckLinkAPI.h	/^enum _BMDDisplayModeSupport {$/;"	g
+_BMDFieldDominance	include/DeckLinkAPI.h	/^enum _BMDFieldDominance {$/;"	g
+_BMDFrameFlags	include/DeckLinkAPI.h	/^enum _BMDFrameFlags {$/;"	g
+_BMDOutputFrameCompletionResult	include/DeckLinkAPI.h	/^enum _BMDOutputFrameCompletionResult {$/;"	g
+_BMDPixelFormat	include/DeckLinkAPI.h	/^enum _BMDPixelFormat {$/;"	g
+_BMDTimecodeFlags	include/DeckLinkAPI.h	/^enum _BMDTimecodeFlags {$/;"	g
+_BMDTimecodeFormat	include/DeckLinkAPI.h	/^enum _BMDTimecodeFormat {$/;"	g
+_BMDVideoConnection	include/DeckLinkAPI.h	/^enum _BMDVideoConnection {$/;"	g
+_BMDVideoInputConversionMode	include/DeckLinkAPI.h	/^enum _BMDVideoInputConversionMode {$/;"	g
+_BMDVideoInputFlags	include/DeckLinkAPI.h	/^enum _BMDVideoInputFlags {$/;"	g
+_BMDVideoInputFormatChangedEvents	include/DeckLinkAPI.h	/^enum _BMDVideoInputFormatChangedEvents {$/;"	g
+_BMDVideoOutputConversionMode	include/DeckLinkAPI.h	/^enum _BMDVideoOutputConversionMode {$/;"	g
+_BMDVideoOutputFlags	include/DeckLinkAPI.h	/^enum _BMDVideoOutputFlags {$/;"	g
+_STIP_Initiation_Header	STIP.h	/^struct _STIP_Initiation_Header {$/;"	s
+_STIP_Transport_Header	STIP.h	/^struct _STIP_Transport_Header {$/;"	s
+__DeckLink_API_h__	include/DeckLinkAPI.h	31;"	d
+__DeckLink_API_v7_1_h__	include/DeckLinkAPI_v7_1.h	30;"	d
+__DeckLink_API_v7_3_h__	include/DeckLinkAPI_v7_3.h	31;"	d
+__LINUX_COM_H_	include/LinuxCOM.h	29;"	d
+__STIP_h__	STIP.h	2;"	d
+_packet	STIP.h	/^typedef struct _packet {$/;"	s
+block_num	decklinksender.cpp	/^unsigned int block_num, framecount=0;$/;"	v
+bmdAnalogVideoFlagComponentBetacamLevels	include/DeckLinkAPI.h	/^    bmdAnalogVideoFlagComponentBetacamLevels           = 1 << 1$/;"	e	enum:_BMDAnalogVideoFlags
+bmdAnalogVideoFlagCompositeSetup75	include/DeckLinkAPI.h	/^    bmdAnalogVideoFlagCompositeSetup75                 = 1 << 0,$/;"	e	enum:_BMDAnalogVideoFlags
+bmdAudioConnectionAESEBU	include/DeckLinkAPI.h	/^    bmdAudioConnectionAESEBU                           = \/* 'aes ' *\/ 0x61657320,$/;"	e	enum:_BMDAudioConnection
+bmdAudioConnectionAnalog	include/DeckLinkAPI.h	/^    bmdAudioConnectionAnalog                           = \/* 'anlg' *\/ 0x616E6C67$/;"	e	enum:_BMDAudioConnection
+bmdAudioConnectionEmbedded	include/DeckLinkAPI.h	/^    bmdAudioConnectionEmbedded                         = \/* 'embd' *\/ 0x656D6264,$/;"	e	enum:_BMDAudioConnection
+bmdAudioOutputStreamContinuous	include/DeckLinkAPI.h	/^    bmdAudioOutputStreamContinuous,                   $/;"	e	enum:_BMDAudioOutputStreamType
+bmdAudioOutputStreamContinuousDontResample	include/DeckLinkAPI.h	/^    bmdAudioOutputStreamContinuousDontResample,       $/;"	e	enum:_BMDAudioOutputStreamType
+bmdAudioOutputStreamTimestamped	include/DeckLinkAPI.h	/^    bmdAudioOutputStreamTimestamped                   $/;"	e	enum:_BMDAudioOutputStreamType
+bmdAudioSampleRate48kHz	include/DeckLinkAPI.h	/^    bmdAudioSampleRate48kHz                            = 48000$/;"	e	enum:_BMDAudioSampleRate
+bmdAudioSampleType16bitInteger	include/DeckLinkAPI.h	/^    bmdAudioSampleType16bitInteger                     = 16,$/;"	e	enum:_BMDAudioSampleType
+bmdAudioSampleType32bitInteger	include/DeckLinkAPI.h	/^    bmdAudioSampleType32bitInteger                     = 32$/;"	e	enum:_BMDAudioSampleType
+bmdDetectedVideoInputRGB444	include/DeckLinkAPI.h	/^    bmdDetectedVideoInputRGB444                        = 1 << 1$/;"	e	enum:_BMDDetectedVideoInputFormatFlags
+bmdDetectedVideoInputYCbCr422	include/DeckLinkAPI.h	/^    bmdDetectedVideoInputYCbCr422                      = 1 << 0,$/;"	e	enum:_BMDDetectedVideoInputFormatFlags
+bmdDisplayModeNotSupported	include/DeckLinkAPI.h	/^    bmdDisplayModeNotSupported                         = 0,$/;"	e	enum:_BMDDisplayModeSupport
+bmdDisplayModeSupported	include/DeckLinkAPI.h	/^    bmdDisplayModeSupported,                          $/;"	e	enum:_BMDDisplayModeSupport
+bmdDisplayModeSupportedWithConversion	include/DeckLinkAPI.h	/^    bmdDisplayModeSupportedWithConversion             $/;"	e	enum:_BMDDisplayModeSupport
+bmdFormat10BitRGB	include/DeckLinkAPI.h	/^    bmdFormat10BitRGB                                  = \/* 'r210' *\/ 0x72323130$/;"	e	enum:_BMDPixelFormat
+bmdFormat10BitYUV	include/DeckLinkAPI.h	/^    bmdFormat10BitYUV                                  = \/* 'v210' *\/ 0x76323130,$/;"	e	enum:_BMDPixelFormat
+bmdFormat8BitARGB	include/DeckLinkAPI.h	/^    bmdFormat8BitARGB                                  = 0x20,$/;"	e	enum:_BMDPixelFormat
+bmdFormat8BitBGRA	include/DeckLinkAPI.h	/^    bmdFormat8BitBGRA                                  = \/* 'BGRA' *\/ 0x42475241,$/;"	e	enum:_BMDPixelFormat
+bmdFormat8BitYUV	include/DeckLinkAPI.h	/^    bmdFormat8BitYUV                                   = \/* '2vuy' *\/ 0x32767579,$/;"	e	enum:_BMDPixelFormat
+bmdFrameFlagDefault	include/DeckLinkAPI.h	/^    bmdFrameFlagDefault                                = 0,$/;"	e	enum:_BMDFrameFlags
+bmdFrameFlagFlipVertical	include/DeckLinkAPI.h	/^    bmdFrameFlagFlipVertical                           = 1 << 0,$/;"	e	enum:_BMDFrameFlags
+bmdFrameHasNoInputSource	include/DeckLinkAPI.h	/^    bmdFrameHasNoInputSource                           = 1 << 31$/;"	e	enum:_BMDFrameFlags
+bmdLowerFieldFirst	include/DeckLinkAPI.h	/^    bmdLowerFieldFirst                                 = \/* 'lowr' *\/ 0x6C6F7772,$/;"	e	enum:_BMDFieldDominance
+bmdMode2k2398	include/DeckLinkAPI.h	/^    bmdMode2k2398                                      = \/* '2k23' *\/ 0x326B3233,$/;"	e	enum:_BMDDisplayMode
+bmdMode2k24	include/DeckLinkAPI.h	/^    bmdMode2k24                                        = \/* '2k24' *\/ 0x326B3234,$/;"	e	enum:_BMDDisplayMode
+bmdMode2k25	include/DeckLinkAPI.h	/^    bmdMode2k25                                        = \/* '2k25' *\/ 0x326B3235$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080i50	include/DeckLinkAPI.h	/^    bmdModeHD1080i50                                   = \/* 'Hi50' *\/ 0x48693530,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080i5994	include/DeckLinkAPI.h	/^    bmdModeHD1080i5994                                 = \/* 'Hi59' *\/ 0x48693539,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080i6000	include/DeckLinkAPI.h	/^    bmdModeHD1080i6000                                 = \/* 'Hi60' *\/ 0x48693630, \/\/ N.B. This _really_ is 60.00 Hz.$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080p2398	include/DeckLinkAPI.h	/^    bmdModeHD1080p2398                                 = \/* '23ps' *\/ 0x32337073,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080p24	include/DeckLinkAPI.h	/^    bmdModeHD1080p24                                   = \/* '24ps' *\/ 0x32347073,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080p25	include/DeckLinkAPI.h	/^    bmdModeHD1080p25                                   = \/* 'Hp25' *\/ 0x48703235,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080p2997	include/DeckLinkAPI.h	/^    bmdModeHD1080p2997                                 = \/* 'Hp29' *\/ 0x48703239,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080p30	include/DeckLinkAPI.h	/^    bmdModeHD1080p30                                   = \/* 'Hp30' *\/ 0x48703330,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080p50	include/DeckLinkAPI.h	/^    bmdModeHD1080p50                                   = \/* 'Hp50' *\/ 0x48703530,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080p5994	include/DeckLinkAPI.h	/^    bmdModeHD1080p5994                                 = \/* 'Hp59' *\/ 0x48703539,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD1080p6000	include/DeckLinkAPI.h	/^    bmdModeHD1080p6000                                 = \/* 'Hp60' *\/ 0x48703630, \/\/ N.B. This _really_ is 60.00 Hz.$/;"	e	enum:_BMDDisplayMode
+bmdModeHD720p50	include/DeckLinkAPI.h	/^    bmdModeHD720p50                                    = \/* 'hp50' *\/ 0x68703530,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD720p5994	include/DeckLinkAPI.h	/^    bmdModeHD720p5994                                  = \/* 'hp59' *\/ 0x68703539,$/;"	e	enum:_BMDDisplayMode
+bmdModeHD720p60	include/DeckLinkAPI.h	/^    bmdModeHD720p60                                    = \/* 'hp60' *\/ 0x68703630,$/;"	e	enum:_BMDDisplayMode
+bmdModeNTSC	include/DeckLinkAPI.h	/^    bmdModeNTSC                                        = \/* 'ntsc' *\/ 0x6E747363,$/;"	e	enum:_BMDDisplayMode
+bmdModeNTSC2398	include/DeckLinkAPI.h	/^    bmdModeNTSC2398                                    = \/* 'nt23' *\/ 0x6E743233, \/\/ 3:2 pulldown$/;"	e	enum:_BMDDisplayMode
+bmdModePAL	include/DeckLinkAPI.h	/^    bmdModePAL                                         = \/* 'pal ' *\/ 0x70616C20,$/;"	e	enum:_BMDDisplayMode
+bmdNoVideoInputConversion	include/DeckLinkAPI.h	/^    bmdNoVideoInputConversion                          = \/* 'none' *\/ 0x6E6F6E65,$/;"	e	enum:_BMDVideoInputConversionMode
+bmdNoVideoOutputConversion	include/DeckLinkAPI.h	/^    bmdNoVideoOutputConversion                         = \/* 'none' *\/ 0x6E6F6E65,$/;"	e	enum:_BMDVideoOutputConversionMode
+bmdOutputFrameCompleted	include/DeckLinkAPI.h	/^    bmdOutputFrameCompleted,                          $/;"	e	enum:_BMDOutputFrameCompletionResult
+bmdOutputFrameDisplayedLate	include/DeckLinkAPI.h	/^    bmdOutputFrameDisplayedLate,                      $/;"	e	enum:_BMDOutputFrameCompletionResult
+bmdOutputFrameDropped	include/DeckLinkAPI.h	/^    bmdOutputFrameDropped,                            $/;"	e	enum:_BMDOutputFrameCompletionResult
+bmdOutputFrameFlushed	include/DeckLinkAPI.h	/^    bmdOutputFrameFlushed                             $/;"	e	enum:_BMDOutputFrameCompletionResult
+bmdProgressiveFrame	include/DeckLinkAPI.h	/^    bmdProgressiveFrame                                = \/* 'prog' *\/ 0x70726F67,$/;"	e	enum:_BMDFieldDominance
+bmdProgressiveSegmentedFrame	include/DeckLinkAPI.h	/^    bmdProgressiveSegmentedFrame                       = \/* 'psf ' *\/ 0x70736620$/;"	e	enum:_BMDFieldDominance
+bmdTimecodeFlagDefault	include/DeckLinkAPI.h	/^    bmdTimecodeFlagDefault                             = 0,$/;"	e	enum:_BMDTimecodeFlags
+bmdTimecodeIsDropFrame	include/DeckLinkAPI.h	/^    bmdTimecodeIsDropFrame                             = 1 << 0$/;"	e	enum:_BMDTimecodeFlags
+bmdTimecodeRP188	include/DeckLinkAPI.h	/^    bmdTimecodeRP188                                   = \/* 'rp18' *\/ 0x72703138,$/;"	e	enum:_BMDTimecodeFormat
+bmdTimecodeSerial	include/DeckLinkAPI.h	/^    bmdTimecodeSerial                                  = \/* 'seri' *\/ 0x73657269$/;"	e	enum:_BMDTimecodeFormat
+bmdTimecodeVITC	include/DeckLinkAPI.h	/^    bmdTimecodeVITC                                    = \/* 'vitc' *\/ 0x76697463,$/;"	e	enum:_BMDTimecodeFormat
+bmdUnknownFieldDominance	include/DeckLinkAPI.h	/^    bmdUnknownFieldDominance                           = 0,$/;"	e	enum:_BMDFieldDominance
+bmdUpperFieldFirst	include/DeckLinkAPI.h	/^    bmdUpperFieldFirst                                 = \/* 'uppr' *\/ 0x75707072,$/;"	e	enum:_BMDFieldDominance
+bmdVideoConnectionComponent	include/DeckLinkAPI.h	/^    bmdVideoConnectionComponent                        = \/* 'cpnt' *\/ 0x63706E74,$/;"	e	enum:_BMDVideoConnection
+bmdVideoConnectionComposite	include/DeckLinkAPI.h	/^    bmdVideoConnectionComposite                        = \/* 'cmst' *\/ 0x636D7374,$/;"	e	enum:_BMDVideoConnection
+bmdVideoConnectionHDMI	include/DeckLinkAPI.h	/^    bmdVideoConnectionHDMI                             = \/* 'hdmi' *\/ 0x68646D69,$/;"	e	enum:_BMDVideoConnection
+bmdVideoConnectionOpticalSDI	include/DeckLinkAPI.h	/^    bmdVideoConnectionOpticalSDI                       = \/* 'opti' *\/ 0x6F707469,$/;"	e	enum:_BMDVideoConnection
+bmdVideoConnectionSDI	include/DeckLinkAPI.h	/^    bmdVideoConnectionSDI                              = \/* 'sdi ' *\/ 0x73646920,$/;"	e	enum:_BMDVideoConnection
+bmdVideoConnectionSVideo	include/DeckLinkAPI.h	/^    bmdVideoConnectionSVideo                           = \/* 'svid' *\/ 0x73766964$/;"	e	enum:_BMDVideoConnection
+bmdVideoInputAnamorphicDownconversionFromHD1080	include/DeckLinkAPI.h	/^    bmdVideoInputAnamorphicDownconversionFromHD1080    = \/* '10am' *\/ 0x3130616D,$/;"	e	enum:_BMDVideoInputConversionMode
+bmdVideoInputAnamorphicDownconversionFromHD720	include/DeckLinkAPI.h	/^    bmdVideoInputAnamorphicDownconversionFromHD720     = \/* '72am' *\/ 0x3732616D,$/;"	e	enum:_BMDVideoInputConversionMode
+bmdVideoInputAnamorphicUpconversion	include/DeckLinkAPI.h	/^    bmdVideoInputAnamorphicUpconversion                = \/* 'amup' *\/ 0x616D7570$/;"	e	enum:_BMDVideoInputConversionMode
+bmdVideoInputColorspaceChanged	include/DeckLinkAPI.h	/^    bmdVideoInputColorspaceChanged                     = 1 << 2$/;"	e	enum:_BMDVideoInputFormatChangedEvents
+bmdVideoInputDisplayModeChanged	include/DeckLinkAPI.h	/^    bmdVideoInputDisplayModeChanged                    = 1 << 0,$/;"	e	enum:_BMDVideoInputFormatChangedEvents
+bmdVideoInputEnableFormatDetection	include/DeckLinkAPI.h	/^    bmdVideoInputEnableFormatDetection                 = 1 << 0$/;"	e	enum:_BMDVideoInputFlags
+bmdVideoInputFieldDominanceChanged	include/DeckLinkAPI.h	/^    bmdVideoInputFieldDominanceChanged                 = 1 << 1,$/;"	e	enum:_BMDVideoInputFormatChangedEvents
+bmdVideoInputFlagDefault	include/DeckLinkAPI.h	/^    bmdVideoInputFlagDefault                           = 0,$/;"	e	enum:_BMDVideoInputFlags
+bmdVideoInputLetterboxDownconversionFromHD1080	include/DeckLinkAPI.h	/^    bmdVideoInputLetterboxDownconversionFromHD1080     = \/* '10lb' *\/ 0x31306C62,$/;"	e	enum:_BMDVideoInputConversionMode
+bmdVideoInputLetterboxDownconversionFromHD720	include/DeckLinkAPI.h	/^    bmdVideoInputLetterboxDownconversionFromHD720      = \/* '72lb' *\/ 0x37326C62,$/;"	e	enum:_BMDVideoInputConversionMode
+bmdVideoInputLetterboxUpconversion	include/DeckLinkAPI.h	/^    bmdVideoInputLetterboxUpconversion                 = \/* 'lbup' *\/ 0x6C627570,$/;"	e	enum:_BMDVideoInputConversionMode
+bmdVideoOutputAnamorphicDownonversion	include/DeckLinkAPI.h	/^    bmdVideoOutputAnamorphicDownonversion              = \/* 'amph' *\/ 0x616D7068,$/;"	e	enum:_BMDVideoOutputConversionMode
+bmdVideoOutputFlagDefault	include/DeckLinkAPI.h	/^    bmdVideoOutputFlagDefault                          = 0,$/;"	e	enum:_BMDVideoOutputFlags
+bmdVideoOutputHD720toHD1080Conversion	include/DeckLinkAPI.h	/^    bmdVideoOutputHD720toHD1080Conversion              = \/* '720c' *\/ 0x37323063,$/;"	e	enum:_BMDVideoOutputConversionMode
+bmdVideoOutputHardwareAnamorphicDownconversion	include/DeckLinkAPI.h	/^    bmdVideoOutputHardwareAnamorphicDownconversion     = \/* 'HWam' *\/ 0x4857616D,$/;"	e	enum:_BMDVideoOutputConversionMode
+bmdVideoOutputHardwareCenterCutDownconversion	include/DeckLinkAPI.h	/^    bmdVideoOutputHardwareCenterCutDownconversion      = \/* 'HWcc' *\/ 0x48576363$/;"	e	enum:_BMDVideoOutputConversionMode
+bmdVideoOutputHardwareLetterboxDownconversion	include/DeckLinkAPI.h	/^    bmdVideoOutputHardwareLetterboxDownconversion      = \/* 'HWlb' *\/ 0x48576C62,$/;"	e	enum:_BMDVideoOutputConversionMode
+bmdVideoOutputLetterboxDownonversion	include/DeckLinkAPI.h	/^    bmdVideoOutputLetterboxDownonversion               = \/* 'ltbx' *\/ 0x6C746278,$/;"	e	enum:_BMDVideoOutputConversionMode
+bmdVideoOutputRP188	include/DeckLinkAPI.h	/^    bmdVideoOutputRP188                                = 1 << 0,$/;"	e	enum:_BMDVideoOutputFlags
+bmdVideoOutputVANC	include/DeckLinkAPI.h	/^    bmdVideoOutputVANC                                 = 1 << 1$/;"	e	enum:_BMDVideoOutputFlags
+buffer	decklinksender.cpp	/^unsigned *buffer;$/;"	v
+byte0	include/LinuxCOM.h	/^	unsigned char byte0;$/;"	m	struct:REFIID
+byte1	include/LinuxCOM.h	/^	unsigned char byte1;$/;"	m	struct:REFIID
+byte10	include/LinuxCOM.h	/^	unsigned char byte10;$/;"	m	struct:REFIID
+byte11	include/LinuxCOM.h	/^	unsigned char byte11;$/;"	m	struct:REFIID
+byte12	include/LinuxCOM.h	/^	unsigned char byte12;$/;"	m	struct:REFIID
+byte13	include/LinuxCOM.h	/^	unsigned char byte13;$/;"	m	struct:REFIID
+byte14	include/LinuxCOM.h	/^	unsigned char byte14;$/;"	m	struct:REFIID
+byte15	include/LinuxCOM.h	/^	unsigned char byte15;$/;"	m	struct:REFIID
+byte2	include/LinuxCOM.h	/^	unsigned char byte2;$/;"	m	struct:REFIID
+byte3	include/LinuxCOM.h	/^	unsigned char byte3;$/;"	m	struct:REFIID
+byte4	include/LinuxCOM.h	/^	unsigned char byte4;$/;"	m	struct:REFIID
+byte5	include/LinuxCOM.h	/^	unsigned char byte5;$/;"	m	struct:REFIID
+byte6	include/LinuxCOM.h	/^	unsigned char byte6;$/;"	m	struct:REFIID
+byte7	include/LinuxCOM.h	/^	unsigned char byte7;$/;"	m	struct:REFIID
+byte8	include/LinuxCOM.h	/^	unsigned char byte8;$/;"	m	struct:REFIID
+byte9	include/LinuxCOM.h	/^	unsigned char byte9;$/;"	m	struct:REFIID
+capture	decklinksender.cpp	/^void capture(int device, int mode, int connection)$/;"	f
+frame_height	STIP.h	/^	unsigned short frame_height;$/;"	m	struct:_STIP_Initiation_Header
+frame_idx	STIP.h	/^	unsigned int frame_idx;$/;"	m	struct:_STIP_Transport_Header
+frame_width	STIP.h	/^	unsigned short frame_width;$/;"	m	struct:_STIP_Initiation_Header
+framecount	decklinksender.cpp	/^    unsigned int     framecount;$/;"	m	class:VideoDelegate	file:
+framecount	decklinksender.cpp	/^unsigned int block_num, framecount=0;$/;"	v
+gCreateIteratorFunc	include/DeckLinkAPIDispatch.cpp	/^static CreateIteratorFunc				gCreateIteratorFunc = NULL;$/;"	v	file:
+gCreateOpenGLPreviewFunc	include/DeckLinkAPIDispatch.cpp	/^static CreateOpenGLScreenPreviewHelperFunc	gCreateOpenGLPreviewFunc = NULL;$/;"	v	file:
+gDeckLinkOnceControl	include/DeckLinkAPIDispatch.cpp	/^static pthread_once_t					gDeckLinkOnceControl = PTHREAD_ONCE_INIT;$/;"	v	file:
+gPreviewOnceControl	include/DeckLinkAPIDispatch.cpp	/^static pthread_once_t					gPreviewOnceControl = PTHREAD_ONCE_INIT;$/;"	v	file:
+hdr_len	STIP.h	/^	unsigned char hdr_len;$/;"	m	struct:_STIP_Initiation_Header
+hdr_len	STIP.h	/^	unsigned char hdr_len;$/;"	m	struct:_STIP_Transport_Header
+header	STIP.h	/^        STIP_hdr header;$/;"	m	struct:_packet
+kDeckLinkAPI_Name	include/DeckLinkAPIDispatch.cpp	34;"	d	file:
+lastTime	decklinksender.cpp	/^	double  lastTime;$/;"	m	class:VideoDelegate	file:
+mRefCount	decklinksender.cpp	/^	int32_t mRefCount;$/;"	m	class:VideoDelegate	file:
+main	decklinksender.cpp	/^int main (int argc, char** argv)$/;"	f
+max_video_frame	STIP.h	/^	unsigned int max_video_frame;$/;"	m	struct:_STIP_Initiation_Header
+packet	decklinksender.cpp	/^Packet packet;$/;"	v
+payload	STIP.h	/^        char payload[PKT_SIZE];$/;"	m	struct:_packet
+pblock_count	STIP.h	/^	unsigned int pblock_count;$/;"	m	struct:_STIP_Transport_Header
+pblock_idx	STIP.h	/^	unsigned int pblock_idx;$/;"	m	struct:_STIP_Transport_Header
+print_capabilities	decklinksender.cpp	/^void print_capabilities()$/;"	f
+print_input_capabilities	decklinksender.cpp	/^void	print_input_capabilities (IDeckLink* deckLink)$/;"	f
+print_input_modes	decklinksender.cpp	/^void print_input_modes (IDeckLink* deckLink)$/;"	f
+print_output_capabilities	decklinksender.cpp	/^void	print_output_capabilities (IDeckLink* deckLink)$/;"	f
+print_output_modes	decklinksender.cpp	/^void	print_output_modes (IDeckLink* deckLink)$/;"	f
+proc_bpb	STIP.h	/^	unsigned short proc_bpb;$/;"	m	struct:_STIP_Initiation_Header
+proc_px_height	STIP.h	/^	unsigned char proc_px_height;$/;"	m	struct:_STIP_Initiation_Header
+proc_px_width	STIP.h	/^	unsigned char proc_px_width;$/;"	m	struct:_STIP_Initiation_Header
+proc_video	STIP.h	/^	unsigned short proc_video;$/;"	m	struct:_STIP_Initiation_Header
+reservered	STIP.h	/^	unsigned short reservered;$/;"	m	struct:_STIP_Initiation_Header
+reservered	STIP.h	/^	unsigned short reservered;$/;"	m	struct:_STIP_Transport_Header
+serveraddr	decklinksender.cpp	/^struct sockaddr_in serveraddr;$/;"	v	typeref:struct:sockaddr_in
+socket_fd	decklinksender.cpp	/^int socket_fd;$/;"	v
+src_bpb	STIP.h	/^	unsigned short src_bpb;$/;"	m	struct:_STIP_Initiation_Header
+src_px_height	STIP.h	/^	unsigned char src_px_height;$/;"	m	struct:_STIP_Initiation_Header
+src_px_width	STIP.h	/^	unsigned char src_px_width;$/;"	m	struct:_STIP_Initiation_Header
+src_video	STIP.h	/^	unsigned short src_video;$/;"	m	struct:_STIP_Initiation_Header
+version	STIP.h	/^	unsigned char version;$/;"	m	struct:_STIP_Initiation_Header
+version	STIP.h	/^	unsigned char version;$/;"	m	struct:_STIP_Transport_Header
+video_fps	STIP.h	/^	unsigned short video_fps;$/;"	m	struct:_STIP_Initiation_Header
+~IDeckLinkAPIInformation	include/DeckLinkAPI.h	/^    virtual ~IDeckLinkAPIInformation () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkAPIInformation
+~IDeckLinkAttributes	include/DeckLinkAPI.h	/^    virtual ~IDeckLinkAttributes () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkAttributes
+~IDeckLinkAudioInputPacket	include/DeckLinkAPI.h	/^    virtual ~IDeckLinkAudioInputPacket () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkAudioInputPacket
+~IDeckLinkDisplayMode	include/DeckLinkAPI.h	/^    virtual ~IDeckLinkDisplayMode () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkDisplayMode
+~IDeckLinkDisplayModeIterator	include/DeckLinkAPI.h	/^    virtual ~IDeckLinkDisplayModeIterator () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkDisplayModeIterator
+~IDeckLinkGLScreenPreviewHelper	include/DeckLinkAPI.h	/^    virtual ~IDeckLinkGLScreenPreviewHelper () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkGLScreenPreviewHelper
+~IDeckLinkInput	include/DeckLinkAPI.h	/^    virtual ~IDeckLinkInput () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkInput
+~IDeckLinkInputCallback	include/DeckLinkAPI.h	/^    virtual ~IDeckLinkInputCallback () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkInputCallback
+~IDeckLinkInputCallback_v7_3	include/DeckLinkAPI_v7_3.h	/^    virtual ~IDeckLinkInputCallback_v7_3 () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkInputCallback_v7_3
+~IDeckLinkInput_v7_3	include/DeckLinkAPI_v7_3.h	/^    virtual ~IDeckLinkInput_v7_3 () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkInput_v7_3
+~IDeckLinkKeyer	include/DeckLinkAPI.h	/^    virtual ~IDeckLinkKeyer () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkKeyer
+~IDeckLinkMutableVideoFrame	include/DeckLinkAPI.h	/^    virtual ~IDeckLinkMutableVideoFrame () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkMutableVideoFrame
+~IDeckLinkOutput	include/DeckLinkAPI.h	/^    virtual ~IDeckLinkOutput () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkOutput
+~IDeckLinkOutput_v7_3	include/DeckLinkAPI_v7_3.h	/^    virtual ~IDeckLinkOutput_v7_3 () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkOutput_v7_3
+~IDeckLinkScreenPreviewCallback	include/DeckLinkAPI.h	/^    virtual ~IDeckLinkScreenPreviewCallback () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkScreenPreviewCallback
+~IDeckLinkTimecode	include/DeckLinkAPI.h	/^    virtual ~IDeckLinkTimecode () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkTimecode
+~IDeckLinkVideoFrame	include/DeckLinkAPI.h	/^    virtual ~IDeckLinkVideoFrame () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkVideoFrame
+~IDeckLinkVideoFrameAncillary	include/DeckLinkAPI.h	/^    virtual ~IDeckLinkVideoFrameAncillary () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkVideoFrameAncillary
+~IDeckLinkVideoInputFrame	include/DeckLinkAPI.h	/^    virtual ~IDeckLinkVideoInputFrame () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkVideoInputFrame
+~IDeckLinkVideoInputFrame_v7_3	include/DeckLinkAPI_v7_3.h	/^    virtual ~IDeckLinkVideoInputFrame_v7_3 () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkVideoInputFrame_v7_3
+~IDeckLinkVideoOutputCallback	include/DeckLinkAPI.h	/^    virtual ~IDeckLinkVideoOutputCallback () {}; \/\/ call Release method to drop reference count$/;"	f	class:IDeckLinkVideoOutputCallback
