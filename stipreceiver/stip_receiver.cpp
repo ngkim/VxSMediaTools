@@ -5,12 +5,11 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <sys/socket.h>
-#include <unistd.h>
 #include <netinet/in.h>
 #include <stdlib.h>
 #include <arpa/inet.h>
 #include <signal.h>
-#include <sys/time.h>
+#include <time.h>
 #include "../include/STIP.h"
 #include "../include/dds.h"
 
@@ -58,14 +57,6 @@ void saveframe(unsigned char *data, int w, int h, unsigned int write_size) {
 
 }
 
-void timer_handler (int signum)
-{
-        static int count = 0;
-	count = processedCount - count;
-        printf("current fps: %d \n", count);
-}
-
-
 int main (int argc, char** argv)
 {
 	int c;
@@ -77,10 +68,9 @@ int main (int argc, char** argv)
 	unsigned char *frame;
 	unsigned int ptr=0;
 	unsigned int compressedSize;
-	struct sigaction sa;
-        struct itimerval timer;
-        struct timeval tv;
-	double proc_start, proc_end;
+    time_t start,end;
+  	double dif;
+	unsigned int frame_count=0;
 
 	// socket setup
 	socklen_t cli_len = sizeof(clientaddr);
@@ -134,24 +124,9 @@ int main (int argc, char** argv)
 
 			if (init.proc_video == DXT1) {
 				compressedSize = init.frame_width*init.frame_height/init.proc_px_width/init.proc_px_height*init.proc_bpb;
-				// start timer to measure fps
-				memset (&sa, 0, sizeof (sa));
-				sa.sa_handler = &timer_handler;
-				sigaction (SIGVTALRM, &sa, NULL);
 
 				frame = (unsigned char *)malloc(compressedSize);
 				printf("malloc: %d \n",compressedSize );
-
-				/* Configure the timer to expire after 250 msec... */
-				timer.it_value.tv_sec = 1;
-				timer.it_value.tv_usec = 0;
-
-				/* ... and every 250 msec after that. */
-				timer.it_interval.tv_sec = 1;
-				timer.it_interval.tv_usec = 0;
-
-				/* Start a virtual timer. It counts down whenever this process is executing. */
-				setitimer (ITIMER_VIRTUAL, &timer, NULL);
 			}
 
 			stip_init = true;
@@ -162,28 +137,32 @@ int main (int argc, char** argv)
 			}
 
 			memcpy((void *)&packet, (void *)&buffer, recv_byte);
-			idx = idx + packet.header.pblock_idx + packet.header.pblock_count;
 			//printf("received packet (block) idx: %d, expected index: %d frame idx: %d \n", packet.header.pblock_idx, idx, packet.header.frame_idx);
+			idx = idx + packet.header.pblock_idx + packet.header.pblock_count;
 
 			// start timer when new frame arrived	
 			if (packet.header.pblock_idx == 0) {
-				gettimeofday(&tv,NULL);
-                                proc_start = tv.tv_usec;	
 			}
 			
-			memcpy((void *)&frame[packet.header.pblock_idx*init.proc_bpb], (void *)&packet.payload, packet.header.pblock_count*init.proc_bpb);
 			//printf("block count: %d, proc_bpb: %d \n", packet.header.pblock_count, init.proc_bpb);
+			memcpy((void *)&frame[packet.header.pblock_idx*init.proc_bpb], (void *)&packet.payload, packet.header.pblock_count*init.proc_bpb);
 			
 			// in this case, downloaded dxt blocks of a frame
 			if ( (packet.header.pblock_idx*8+packet.header.pblock_count*8)  == compressedSize) {
-				processedCount++;
-				//processing time
-				gettimeofday(&tv,NULL);
-				proc_end = tv.tv_usec;
-			 //	printf("processing time (current frame): %2.2fms \n", proc_end - proc_start);
+				// increase frame counter if all packets belonging to a frame received
+				frame_count++;
 
-				saveframe( frame, 1920, 1080, compressedSize);
-				bzero(frame, sizeof(frame));
+  				time (&end);
+  				dif = difftime (end,start);
+				if ( difftime(end, start) > 1) {
+					printf("frame rate: %d\n", frame_count);
+					// reset timer and counter
+					time(&start);
+					frame_count = 0;
+				}
+
+				//saveframe( frame, 1920, 1080, compressedSize);
+				//bzero(frame, sizeof(frame));
 			}
 
 		}
