@@ -14,7 +14,7 @@
 #include "../include/STIP.h"
 #include "../include/dds.h"
 
-#define PORT 5500
+#define PORT 55555
 
 int i=0;
 unsigned idx=0;
@@ -105,12 +105,18 @@ int main (int argc, char** argv)
 	}
 
 	int recv_byte;
+	bool stip_init = false;
 	while(1)
 	{
-		recv_byte = recvfrom(socket_fd, (void *)&buffer, sizeof(buffer), 0, (struct sockaddr *)&clientaddr, &cli_len);
-		//printf("packet received: %d \n", recv_byte);
+		if (!stip_init) {
+			printf("Wait for STIP init packet...\n");
+		}
 
-		if (recv_byte < 30) {   // initiation packet
+		recv_byte = recvfrom(socket_fd, (void *)&buffer, sizeof(buffer), 0, (struct sockaddr *)&clientaddr, &cli_len);
+
+		if ( !stip_init && recv_byte < 30 ) {
+			printf ("STIP init packet received!!!\n");
+
 			memcpy((void *)&init, (void *)&buffer, recv_byte);
 			printf("reading initiation header info.\n");
 			printf("\tsrc_video=%d\n", init.src_video);
@@ -147,10 +153,17 @@ int main (int argc, char** argv)
 				/* Start a virtual timer. It counts down whenever this process is executing. */
 				setitimer (ITIMER_VIRTUAL, &timer, NULL);
 			}
+
+			stip_init = true;
 		} else {                // video transport
+			if (!stip_init)	 { 
+				printf("STIP has not been initiailized!!!\n");
+				continue;
+			}
+
 			memcpy((void *)&packet, (void *)&buffer, recv_byte);
 			idx = idx + packet.header.pblock_idx + packet.header.pblock_count;
-			printf("received packet (block) idx: %d, expected index: %d frame idx: %d \n", packet.header.pblock_idx, idx, packet.header.frame_idx);
+			//printf("received packet (block) idx: %d, expected index: %d frame idx: %d \n", packet.header.pblock_idx, idx, packet.header.frame_idx);
 
 			// start timer when new frame arrived	
 			if (packet.header.pblock_idx == 0) {
@@ -159,7 +172,7 @@ int main (int argc, char** argv)
 			}
 			
 			memcpy((void *)&frame[packet.header.pblock_idx*init.proc_bpb], (void *)&packet.payload, packet.header.pblock_count*init.proc_bpb);
-			printf("block count: %d, proc_bpb: %d \n", packet.header.pblock_count, init.proc_bpb);
+			//printf("block count: %d, proc_bpb: %d \n", packet.header.pblock_count, init.proc_bpb);
 			
 			// in this case, downloaded dxt blocks of a frame
 			if ( (packet.header.pblock_idx*8+packet.header.pblock_count*8)  == compressedSize) {
@@ -167,7 +180,7 @@ int main (int argc, char** argv)
 				//processing time
 				gettimeofday(&tv,NULL);
 				proc_end = tv.tv_usec;
-			 	printf("processing time (current frame): %2.2fms \n", proc_end - proc_start);
+			 //	printf("processing time (current frame): %2.2fms \n", proc_end - proc_start);
 
 				saveframe( frame, 1920, 1080, compressedSize);
 				bzero(frame, sizeof(frame));
