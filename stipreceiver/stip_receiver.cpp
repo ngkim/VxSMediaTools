@@ -13,8 +13,6 @@
 #include "../include/STIP.h"
 #include "../include/dds.h"
 
-#define PORT 55555
-
 int i=0;
 unsigned idx=0;
 unsigned int processedCount = 0;
@@ -63,14 +61,20 @@ int main (int argc, char** argv)
 	int winWidth, winHeight;
 	char buffer[4096];
 	struct sockaddr_in serveraddr, clientaddr;
-	Packet packet;
-	STIP_init init;
-	unsigned char *frame;
+
+	unsigned char *frame_buffer;
 	unsigned int ptr=0;
 	unsigned int compressedSize;
     time_t start,end;
   	double dif;
 	unsigned int frame_count=0;
+
+	if (argc == 1) {
+		printf("Usage: %s [port_number]\n", argv[0]);
+		exit(1);
+	}
+
+	int port=atoi(argv[1]);
 
 	// socket setup
 	socklen_t cli_len = sizeof(clientaddr);
@@ -85,7 +89,7 @@ int main (int argc, char** argv)
 	bzero(&serveraddr, sizeof(serveraddr));
 	serveraddr.sin_family = AF_INET;
 	serveraddr.sin_addr.s_addr = htonl(INADDR_ANY);
-	serveraddr.sin_port = htons(PORT);
+	serveraddr.sin_port = htons(port);
 
 	int state = bind(socket_fd, (struct sockaddr *)&serveraddr, sizeof(serveraddr));
 	if (state == -1)
@@ -96,6 +100,9 @@ int main (int argc, char** argv)
 
 	int recv_byte;
 	bool stip_init = false;
+
+	Packet* packet;
+	STIP_init* init;
 	while(1)
 	{
 		if (!stip_init) {
@@ -107,59 +114,67 @@ int main (int argc, char** argv)
 		if ( !stip_init && recv_byte < 30 ) {
 			printf ("STIP init packet received!!!\n");
 
-			memcpy((void *)&init, (void *)&buffer, recv_byte);
+			init = (STIP_init *)buffer;
+
+			//memcpy((void *)&init, (void *)&buffer, recv_byte);
 			printf("reading initiation header info.\n");
-			printf("\tsrc_video=%d\n", init.src_video);
-			printf("\tproc_video=%d\n", init.proc_video);
-			printf("\tsrc_px_width=%d\n", init.src_px_width);
-			printf("\tsrc_px_height=%d\n", init.src_px_height);
-			printf("\tsrc_bpb=%d\n", init.src_bpb);
-			printf("\tproc_px_width=%d\n", init.proc_px_width);
-			printf("\tproc_px_height=%d\n", init.proc_px_height);
-			printf("\tproc_bpb=%d\n", init.proc_bpb);
-			printf("\tframe_width=%d\n", init.frame_width);
-			printf("\tframe_height=%d\n", init.frame_height);
-			printf("\tmax_video_frame=%d\n", init.max_video_frame);
-			printf("\tvideo_fps=%d\n", init.video_fps);
+			printf("\tsrc_video=%d\n", init->src_video);
+			printf("\tproc_video=%d\n", init->proc_video);
+			printf("\tsrc_px_width=%d\n", init->src_px_width);
+			printf("\tsrc_px_height=%d\n", init->src_px_height);
+			printf("\tsrc_bpb=%d\n", init->src_bpb);
+			printf("\tproc_px_width=%d\n", init->proc_px_width);
+			printf("\tproc_px_height=%d\n", init->proc_px_height);
+			printf("\tproc_bpb=%d\n", init->proc_bpb);
+			printf("\tframe_width=%d\n", init->frame_width);
+			printf("\tframe_height=%d\n", init->frame_height);
+			printf("\tmax_video_frame=%d\n", init->max_video_frame);
+			printf("\tvideo_fps=%d\n", init->video_fps);
 
-			if (init.proc_video == DXT1) {
-				compressedSize = init.frame_width*init.frame_height/init.proc_px_width/init.proc_px_height*init.proc_bpb;
+			if (init->proc_video == DXT1) {
+				compressedSize = (init->frame_width * init->frame_height) * init->proc_bpb / ( init->src_px_width * init->src_px_height );
 
-				frame = (unsigned char *)malloc(compressedSize);
-				printf("malloc: %d \n",compressedSize );
+				frame_buffer = (unsigned char *)malloc(compressedSize);
+				printf("malloc: %d \n", compressedSize );
 			}
 
 			stip_init = true;
-		} else {                // video transport
+		} else {     
+			// video transport
 			if (!stip_init)	 { 
 				printf("STIP has not been initiailized!!!\n");
 				continue;
 			}
 
-			memcpy((void *)&packet, (void *)&buffer, recv_byte);
-			//printf("received packet (block) idx: %d, expected index: %d frame idx: %d \n", packet.header.pblock_idx, idx, packet.header.frame_idx);
-			idx = idx + packet.header.pblock_idx + packet.header.pblock_count;
+			packet = (Packet *)buffer;
+			//printf("Frame idx= %d Received packet (block) idx= %d Expected index= %d\n", packet->header.frame_idx, packet->header.pblock_idx, idx );
+			//memcpy((void *)&packet, (void *)&buffer, recv_byte);
+			idx = idx + packet->header.pblock_idx + packet->header.pblock_count;
 
 			// start timer when new frame arrived	
-			if (packet.header.pblock_idx == 0) {
-			}
-			
-			//printf("block count: %d, proc_bpb: %d \n", packet.header.pblock_count, init.proc_bpb);
-			memcpy((void *)&frame[packet.header.pblock_idx*init.proc_bpb], (void *)&packet.payload, packet.header.pblock_count*init.proc_bpb);
-			
-			// in this case, downloaded dxt blocks of a frame
-			if ( (packet.header.pblock_idx*8+packet.header.pblock_count*8)  == compressedSize) {
+			if (packet->header.pblock_idx == 0) {
 				// increase frame counter if all packets belonging to a frame received
 				frame_count++;
 
-  				time (&end);
+				time (&end);
   				dif = difftime (end,start);
-				if ( difftime(end, start) > 1) {
-					printf("frame rate: %d\n", frame_count);
+				if ( dif > 1) {
+					printf("frame rate= %5.1f\n", frame_count / dif);
 					// reset timer and counter
 					time(&start);
 					frame_count = 0;
 				}
+			}
+			
+			//printf("block count: %d, proc_bpb: %d \n", packet.header.pblock_count, init.proc_bpb);
+			memcpy((void *)&frame_buffer[packet->header.pblock_idx*init->proc_bpb], (void *)&packet->payload, packet->header.pblock_count*init->proc_bpb);
+			
+			// in this case, downloaded dxt blocks of a frame
+			if ( ((packet->header.pblock_idx * init->proc_bpb) + (packet->header.pblock_count * init->proc_bpb))  
+				== compressedSize) {
+				printf("finished receiving packets of a frame...\n");
+				printf("Frame idx= %d Received packet (block) idx= %d Expected index= %d\n", packet->header.frame_idx, packet->header.pblock_idx, idx );
+  				
 
 				//saveframe( frame, 1920, 1080, compressedSize);
 				//bzero(frame, sizeof(frame));
