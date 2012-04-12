@@ -158,7 +158,7 @@ int main (int argc, char** argv)
 
 				time (&end);
   				dif = difftime (end,start);
-				if ( dif > 1) {
+				if ( dif >= 1) {
 					printf("frame rate= %5.1f\n", frame_count / dif);
 					// reset timer and counter
 					time(&start);
